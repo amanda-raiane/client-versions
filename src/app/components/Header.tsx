@@ -19,7 +19,7 @@ export function Header({
   youTubeLink,
 }: HeaderProps) {
   return (
-    <header className="flex justify-between bg-slate-100 xl:px-96 px-8 md:px-16 py-5 dark:bg-slate-950 dark:border-b dark:border-slate-900 flex-col md:flex-row gap-4">
+    <header className="flex justify-between bg-slate-50 xl:px-96 px-8 md:px-16 py-5 dark:bg-slate-950 dark:border-b dark:border-slate-900 flex-col md:flex-row gap-4">
       <Image alt="Logo G Client" src={logo} />
       <div className="flex items-center gap-3">
         <ul className="flex gap-3">
