@@ -3,6 +3,7 @@ import { Header } from "./components/Header";
 import { a1_0_0 } from "@/app/data/versions/1.0.0/added/data";
 import { a1_2_1 } from "./data/versions/1.2.1/added/data";
 import { f1_2_1 } from "./data/versions/1.2.1/fix/data";
+import { f1_2_3 } from "./data/versions/1.2.3/fix/data";
 
 export default function Home() {
   return (
@@ -19,6 +20,14 @@ export default function Home() {
         <h1 className="font-bold text-4xl my-10 px-8 md:px-0">
           Histórico de mudanças
         </h1>
+
+        <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
+          <DefaultText
+            title={"corrigimos"}
+            items={f1_2_3}
+            versionDate="1.2.3 - (23/11/23)"
+          />
+        </div>
 
         <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
           <DefaultText
