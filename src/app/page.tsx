@@ -1,9 +1,10 @@
 import { DefaultText } from "./components/DefaultText";
 import { Header } from "./components/Header";
 import { a1_0_0 } from "@/app/data/versions/1.0.0/added/data";
-import { a1_2_1 } from "./data/versions/1.2.1/added/data";
-import { f1_2_1 } from "./data/versions/1.2.1/fix/data";
-import { f1_2_3 } from "./data/versions/1.2.3/fix/data";
+import { a1_1_1 } from "./data/versions/1.1.1/added/data";
+import { f1_2_1 } from "./data/versions/1.1.1/fix/data";
+import { f1_1_2 } from "./data/versions/1.1.2/fix/data";
+import { a1_2_2 } from "./data/versions/1.2.2/added/data";
 
 export default function Home() {
   return (
@@ -23,17 +24,25 @@ export default function Home() {
 
         <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
           <DefaultText
+            title={"adicionamos"}
+            items={a1_2_2}
+            versionDate="1.2.2 - (27/11/23)"
+          />
+        </div>
+
+        <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
+          <DefaultText
             title={"corrigimos"}
-            items={f1_2_3}
-            versionDate="1.2.3 - (23/11/23)"
+            items={f1_1_2}
+            versionDate="1.1.2 - (23/11/23)"
           />
         </div>
 
         <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
           <DefaultText
             title={"adicionamos"}
-            items={a1_2_1}
-            versionDate={"1.2.1 - (21/11/23)"}
+            items={a1_1_1}
+            versionDate={"1.1.1 - (21/11/23)"}
           />
           <DefaultText title={"corrigimos"} items={f1_2_1} />
         </div>
