@@ -5,6 +5,7 @@ import { a1_1_1 } from "./data/versions/1.1.1/added/data";
 import { f1_2_1 } from "./data/versions/1.1.1/fix/data";
 import { f1_1_2 } from "./data/versions/1.1.2/fix/data";
 import { a1_2_2 } from "./data/versions/1.2.2/added/data";
+import { a1_3_2 } from "./data/versions/1.3.2/added/data";
 
 export default function Home() {
   return (
@@ -21,6 +22,13 @@ export default function Home() {
         <h1 className="font-bold text-4xl my-10 px-8 md:px-0">
           Histórico de mudanças
         </h1>
+        <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
+          <DefaultText
+            title={"adicionamos"}
+            items={a1_3_2}
+            versionDate="1.3.2 - (08/12/23)"
+          />
+        </div>
 
         <div className="py-5 dark:border-b dark:border-slate-800 border-b border-slate-300">
           <DefaultText
