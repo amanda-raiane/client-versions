@@ -23,7 +23,7 @@ export default function Home() {
           <div>
             <Image alt="logo escrito G Client" src={logo} className="" />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              13 de fevereiro de 2024 <span>v1.4.2</span>
+              14 de fevereiro de 2024 <span>v1.4.2</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -58,7 +58,7 @@ export default function Home() {
               </li>
               <li>4. Adicione as informações que desejar para o sócio</li>
             </ul>
-            <Link target="_blank" className="block" href={"https://www.youtube.com/@codificadev"}>
+            <Link target="_blank" className="block" href={"https://youtu.be/dIduGeqxLGE"}>
               <button className="px-3 py-2 rounded-lg border border-blue-600 transition-all duration-300 dark:hover:bg-slate-800 hover:bg-slate-200">
                 ver tutorial
               </button>
@@ -100,7 +100,7 @@ export default function Home() {
               Também será possível enviar notificações de maneira personalizada,
               para toda a empresa, departamento ou usuários em específico.
             </p>
-            <Link target="_blank" className="block" href={"https://www.youtube.com/@codificadev"}>
+            <Link target="_blank" className="block" href={"https://youtu.be/TvNpBhFL2IQ"}>
               <button className="px-3 py-2 rounded-lg border border-blue-600 transition-all duration-300 dark:hover:bg-slate-800 hover:bg-slate-200">
                 ver tutorial
               </button>
@@ -139,7 +139,7 @@ export default function Home() {
                 selecione uma das opções
               </li>
             </ul>
-            <Link target="_blank" className="block" href={"https://www.youtube.com/@codificadev"}>
+            <Link target="_blank" className="block" href={"https://youtu.be/CGd6CDtfwMI"}>
               <button className="px-3 py-2 rounded-lg border border-blue-600 transition-all duration-300 dark:hover:bg-slate-800 hover:bg-slate-200">
                 ver tutorial
               </button>
