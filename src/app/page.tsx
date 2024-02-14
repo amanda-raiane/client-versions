@@ -33,7 +33,7 @@ export default function Home() {
         <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-between md:gap-20 gap-10 flex-col lg:flex-row">
           <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              conteúdo
+              adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
               Guarde as informações dos sócios
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              performance
+              adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
               Fique por dentro de tudo com as notificações
@@ -111,7 +111,7 @@ export default function Home() {
         <section className="2xl:px-64 px-5 mt-20 pb-36 flex md:justify-between md:gap-20 gap-10 flex-col lg:flex-row">
           <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              conteúdo
+              adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
               Adicione o anexo secundário
