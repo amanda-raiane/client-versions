@@ -133,8 +133,8 @@ export default function Home() {
               </p>
               <ul>
                 <li>Lista para selecionar estado e cidade dos sócios</li>
-               {/*  <li>Novos filtros no relatório de clientes</li>
-                <li>Responsável pelo cliente por departamento</li> */}
+                <li>Novos filtros no relatório de clientes</li>
+                <li>Responsável pelo cliente por departamento</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
