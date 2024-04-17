@@ -1,6 +1,7 @@
 import { OtherVersion } from "./OtherVersion";
 import imageNotification from "@/app/images/versions/1_4_2/notificacao.png";
 import imageDocs from "@/app/images/versions/1_5_3/documentos.png";
+import imageDash from "@/app/images/versions/1_6_3/dash-legal.png"
 
 export function SessionOtherResources() {
   return (
@@ -8,6 +9,13 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 p-10 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="flex justify-center lg:items-start gap-8 flex-col lg:flex-row items-center">
+          <OtherVersion
+            link="/versao-1-6-3"
+            date="22 de março de 2024"
+            imageUrl={imageDash}
+            version="v1.6.3"
+            title="Veja tudo em um só lugar."
+          />
           <OtherVersion
             link="/versao-1-5-3"
             date="01 de março de 2024"
