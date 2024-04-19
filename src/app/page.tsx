@@ -62,8 +62,8 @@ export default function Home() {
             </ul>
             <Link
               target="_blank"
-              className="hidden"
-              href={"https://youtu.be/b1FvFRYzE5A"}
+              className=""
+              href={"https://www.youtube.com/watch?v=2bzLUiXe4rM"}
             >
               <PrimaryButton text={"saiba como"} />
             </Link>
@@ -123,8 +123,8 @@ export default function Home() {
 
             <Link
               target="_blank"
-              className="hidden"
-              href={"https://youtu.be/o6riEhuQeGY"}
+              className=""
+              href={"https://www.youtube.com/watch?v=2bzLUiXe4rM"}
             >
               <PrimaryButton text={"saiba como"} />
             </Link>
@@ -156,8 +156,8 @@ export default function Home() {
 
             <Link
               target="_blank"
-              className="hidden"
-              href={"https://youtu.be/b1FvFRYzE5A"}
+              className=""
+              href={"https://www.youtube.com/watch?v=2bzLUiXe4rM"}
             >
               <PrimaryButton text={"saiba como"} />
             </Link>
