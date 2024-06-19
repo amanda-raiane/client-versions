@@ -10,9 +10,7 @@ import logo from "@/app/images/svg/logoClient.svg";
 import imageStatus from "@/app/images/versions/1_5_3/status.png";
 import imageDocs from "@/app/images/versions/1_5_3/documentos.png";
 
-import { SessionOtherResources } from "../components/SessionOtherResources";
-
-export default function Home() {
+export default function Page() {
   const description = [
     "Personalize os status dos processos de maneira eficaz. ",
     "Crie documentos e compartilhe com a sua equipe.",

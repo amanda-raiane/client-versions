@@ -1,14 +1,46 @@
 import { OtherVersion } from "./OtherVersion";
 import imageNotification from "@/app/images/versions/1_4_2/notificacao.png";
 import imageDocs from "@/app/images/versions/1_5_3/documentos.png";
-import imageDash from "@/app/images/versions/1_6_3/dash-legal.png"
+import imageDash from "@/app/images/versions/1_6_3/dash-legal.png";
+import imageDashOperation from "@/app/images/versions/1_7_4/dash-operacao.png";
+import imageHealthScore from "@/app/images/versions/1_8_0/health-score.png";
+import imageNotice from "@/app/images/versions/1_10_0/aviso-previo.png";
+import imageOffboarding from "@/app/images/versions/1_11_0/offboarding.png";
 
 export function SessionOtherResources() {
   return (
     <section className="2xl:px-64 px-5 lg:my-36">
-      <div className="dark:bg-slate-900 bg-slate-100 p-10 rounded-2xl space-y-10">
+      <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
-        <div className="flex justify-center lg:items-start gap-8 flex-col lg:flex-row items-center">
+        <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-11-0"
+            date="10 de junho de 2024"
+            imageUrl={imageOffboarding}
+            version="v1.11.0"
+            title="Offboarding de clientes."
+          />
+          <OtherVersion
+            link="/versao-1-10-0"
+            date="02 de junho de 2024"
+            imageUrl={imageNotice}
+            version="v1.10.0"
+            title="Dias para aviso prévio."
+          />
+          <OtherVersion
+            link="/versao-1-8-0"
+            date="16 de maio de 2024"
+            imageUrl={imageHealthScore}
+            version="v1.8.0"
+            title="Pesquisa NPS e Health Score."
+          />
+          <OtherVersion
+            link="/versao-1-7-4"
+            date="17 de abril de 2024"
+            imageUrl={imageDashOperation}
+            version="v1.7.4"
+            title="Dashboard de novos clientes para operação."
+          />
           <OtherVersion
             link="/versao-1-6-3"
             date="22 de março de 2024"

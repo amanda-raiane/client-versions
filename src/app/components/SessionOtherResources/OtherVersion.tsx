@@ -18,7 +18,7 @@ export function OtherVersion({
 }: OtherVersionProps) {
   return (
     <Link href={link}>
-      <div className="border dark:border-slate-800  border-slate-300 rounded-2xl sm:px-10 sm:pt-10 px-4 pt-4 space-y-4 w-full">
+      <div className="border dark:border-slate-800  border-slate-300 rounded-2xl sm:px-10 sm:pt-10 px-4 pt-4 space-y-4 w-full h-full">
         <div className="flex items-end gap-2">
           <h3 className="text-xl">{date}</h3>
           <span className="dark:text-slate-500">{version}</span>
