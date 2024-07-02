@@ -6,6 +6,7 @@ import imageDashOperation from "@/app/images/versions/1_7_4/dash-operacao.png";
 import imageHealthScore from "@/app/images/versions/1_8_0/health-score.png";
 import imageNotice from "@/app/images/versions/1_10_0/aviso-previo.png";
 import imageOffboarding from "@/app/images/versions/1_11_0/offboarding.png";
+import imageReports from "@/app/images/versions/1_12_0/relatorios.png";
 
 export function SessionOtherResources() {
   return (
@@ -13,6 +14,13 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-12-0"
+            date="19 de junho de 2024"
+            imageUrl={imageReports}
+            version="v1.12.0"
+            title="Relatórios aprimorados."
+          />
           <OtherVersion
             link="/versao-1-11-0"
             date="10 de junho de 2024"
