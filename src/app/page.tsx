@@ -27,7 +27,7 @@ export default function Home() {
           <div>
             <Image alt="logo escrito G Client" src={logo} className="" />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              24 de julho de 2024 <span>v1.14.0</span>
+              26 de julho de 2024 <span>v1.14.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
