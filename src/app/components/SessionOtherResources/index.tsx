@@ -8,14 +8,22 @@ import imageNotice from "@/app/images/versions/1_10_0/aviso-previo.png";
 import imageOffboarding from "@/app/images/versions/1_11_0/offboarding.png";
 import imageReports from "@/app/images/versions/1_12_0/relatorios.png";
 import imageHome from "@/app/images/versions/1_13_0/menu.png";
+import registerOcorrenceMenu from "@/app/images/versions/1_14_0/cadastro-via-menu.png";
 
-// Add a versão 13 e 14
 export function SessionOtherResources() {
   return (
     <section className="2xl:px-64 px-5 lg:my-36">
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-14-0"
+            date="26 de julho de 2024"
+            imageUrl={registerOcorrenceMenu}
+            version="v1.14.0"
+            title="Registro de ocorrência via menu."
+          />
+
           <OtherVersion
             link="/versao-1-13-0"
             date="02 de julho de 2024"
