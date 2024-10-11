@@ -8,7 +8,7 @@ import { PrimaryButton } from "./components/PrimaryButton";
 import { SessionOtherResources } from "./components/SessionOtherResources";
 import PageHeader from "./components/PageHeader";
 
-import logo from "@/app/images/svg/logoClient.svg";
+import logo from "@/app/images/svg/logo-azul-client.svg";
 import imageKaban from "@/app/images/versions/1_19_0/kaban.png";
 import imageSavedPDF from "@/app/images/versions/1_19_0/saved-pdf.png";
 
