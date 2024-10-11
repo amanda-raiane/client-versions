@@ -125,6 +125,10 @@ export default function Home() {
                 <li>
                   Exibir segmento do cliente no envio de clientes para operação
                 </li>
+                <li>
+                  Exibir lista de clientes em cada indicador do health score
+                </li>
+                <li>Visualizar notificações arquivadas</li>
               </ul>
             </div>
           </div>
