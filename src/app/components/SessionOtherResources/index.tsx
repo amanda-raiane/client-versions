@@ -21,7 +21,7 @@ export function SessionOtherResources() {
             link="/versao-1-19-0"
             date="15 de outubro de 2024"
             imageUrl={imageKaban}
-            version="v1.14.0"
+            version="v1.19.0"
             title="Crie quadros kanban personalizados para o seu fluxo de trabalho."
           />
 
