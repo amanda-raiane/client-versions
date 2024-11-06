@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,11 +10,15 @@ import { PrimaryButton } from "./components/PrimaryButton";
 import { SessionOtherResources } from "./components/SessionOtherResources";
 import PageHeader from "./components/PageHeader";
 
-import logo from "@/app/images/svg/logo-azul-client.svg";
+import { useTheme } from "next-themes";
+import logoDark from "@/app/assets/logo-branco.png";
+import logoLight from "@/app/assets/logo-azul.png";
 import imageKaban from "@/app/images/versions/1_19_0/kaban.png";
 import imageSavedPDF from "@/app/images/versions/1_19_0/saved-pdf.png";
 
 export default function Home() {
+  const { theme } = useTheme();
+
   const description = [
     "Crie quadros kanban personalizados para o seu fluxo de trabalho. ",
     "Salvar playbooks em PDF",
@@ -23,7 +29,11 @@ export default function Home() {
         <PageHeader description={description} />
         <div className="2xl:px-64 px-5 flex md:justify-between items-center flex-col-reverse sm:flex-row mt-6">
           <div>
-            <Image alt="logo escrito G Client" src={logo} />
+            <Image
+              className="w-48"
+              alt="logo escrito G Client"
+              src={theme === "dark" ? logoDark : logoLight}
+            />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
               15 de outubro de 2024 <span>v1.19.0</span>
             </p>
