@@ -60,13 +60,10 @@ export default function Page() {
               </li>
             </ul>
             <Link
-              className="hidden"
               target="_blank"
-              href={
-                "https://gclient.notion.site/Aviso-pr-vio-como-definir-os-dias-f6c8bf2c95504ca5a237f6048e6d14ba"
-              }
+              href={"https://ajuda.gclient.com.br/docs/customer-management/nps"}
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
@@ -101,13 +98,12 @@ export default function Page() {
               </li>
             </ul>
             <Link
-              className=""
               target="_blank"
               href={
-                "https://gclient.notion.site/Como-controlar-o-acesso-de-usu-rios-p-ginas-e-itens-do-menu-c5a948366fd1452a8530d89ac41b98d8"
+                "https://ajuda.gclient.com.br/docs/other-configs/user-acess-control"
               }
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
