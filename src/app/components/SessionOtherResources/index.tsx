@@ -9,6 +9,7 @@ import imageOffboarding from "@/app/images/versions/1_11_0/offboarding.png";
 import imageReports from "@/app/images/versions/1_12_0/relatorios.png";
 import imageHome from "@/app/images/versions/1_13_0/menu.png";
 import registerOcorrenceMenu from "@/app/images/versions/1_14_0/cadastro-via-menu.png";
+import imageKaban from "@/app/images/versions/1_19_0/kaban.png";
 
 export function SessionOtherResources() {
   return (
@@ -16,6 +17,14 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-19-0"
+            date="15 de outubro de 2024"
+            imageUrl={imageKaban}
+            version="v1.14.0"
+            title="Crie quadros kanban personalizados para o seu fluxo de trabalho."
+          />
+
           <OtherVersion
             link="/versao-1-14-0"
             date="26 de julho de 2024"
