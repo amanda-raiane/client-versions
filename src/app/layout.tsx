@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Versões - G Client",
   description: "Confira as novidades do G Client",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 
