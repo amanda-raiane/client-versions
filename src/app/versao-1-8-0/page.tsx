@@ -61,9 +61,9 @@ export default function Page() {
             </ul>
             <Link
               target="_blank"
-              href={"https://www.youtube.com/watch?v=YhoVOl7JRyc&"}
+              href={"https://ajuda.gclient.com.br/docs/customer-management/nps"}
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
@@ -106,10 +106,10 @@ export default function Page() {
             <Link
               target="_blank"
               href={
-                "https://gclient.notion.site/O-que-Health-Score-e-como-calcular-b3a7f5736fa9427ea980c65c8e5ffd9a"
+                "https://ajuda.gclient.com.br/docs/customer-management/health-score"
               }
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>

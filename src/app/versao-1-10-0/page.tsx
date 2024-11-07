@@ -57,11 +57,9 @@ export default function Page() {
             </ul>
             <Link
               target="_blank"
-              href={
-                "https://gclient.notion.site/Aviso-pr-vio-como-definir-os-dias-f6c8bf2c95504ca5a237f6048e6d14ba"
-              }
+              href={"https://ajuda.gclient.com.br/docs/other-configs/notice"}
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>

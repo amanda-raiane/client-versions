@@ -112,13 +112,12 @@ export default function Home() {
               </li>
             </ul>
             <Link
-              className="hidden"
               target="_blank"
               href={
-                "https://gclient.notion.site/Como-controlar-o-acesso-de-usu-rios-p-ginas-e-itens-do-menu-c5a948366fd1452a8530d89ac41b98d8"
+                "https://ajuda.gclient.com.br/docs/process-management/checklist-automations"
               }
             >
-              <PrimaryButton text={"saiba como"} />
+              <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>

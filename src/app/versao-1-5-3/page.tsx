@@ -113,7 +113,9 @@ export default function Page() {
             <Link
               target="_blank"
               className="block"
-              href={"https://youtu.be/AnPci2kSHB8"}
+              href={
+                "https://ajuda.gclient.com.br/docs/category/gest%C3%A3o-de-arquivos"
+              }
             >
               <PrimaryButton text={"ver tutorial"} />
             </Link>
