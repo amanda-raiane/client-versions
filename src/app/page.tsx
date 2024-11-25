@@ -13,7 +13,7 @@ import PageHeader from "./components/PageHeader";
 import { useTheme } from "next-themes";
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import darkmode from "@/app/images/versions/1_21_0/dark0mode.png";
+import darkMode from "@/app/images/versions/1_21_0/dark-mode.png";
 import nps from "@/app/images/versions/1_21_0/nps-mod.png";
 import exportWorkFlow from "@/app/images/versions/1_21_0/export-work-flow.png";
 
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={darkmode}
+              src={darkMode}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print do kaban"
