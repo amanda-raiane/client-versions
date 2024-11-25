@@ -56,7 +56,7 @@ export default function Home() {
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Home:</strong> Clique nos botões de dark ou
+                <strong>1. Na navbar:</strong> Clique nos botões de dark ou
                 light;.
               </li>
             </ol>
@@ -86,11 +86,12 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Exportar fluxos de Trabalho
+              Exportar tarefas do fluxo de trabalho
             </h2>
             <p className="sm:text-lg">
               Agora você pode exportar os seus quadros dos fluxos de trabalho em
-              PDF.
+              PDF, além disso os filtros da tarefas seram refletidos na
+              exportação.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
@@ -126,14 +127,14 @@ export default function Home() {
             <span className="bg-yellow-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               modificado
             </span>
-            <h2 className="sm:text-3xl text-2xl">NPS</h2>
+            <h2 className="sm:text-3xl text-2xl">Novidades no NPS</h2>
             <p className="sm:text-lg">
               Agora você criar templates de email no NPS e de obrigado. Além
               disso agora tem um gráfico muito mais detalhado.
             </p>
             <ol>
               <li>
-                <strong>1. Na Home:</strong> Clique no icone de NPS;
+                <strong>1. Na Menu:</strong> Clique no icone de NPS;
               </li>
               <li>
                 <strong>2. Resultados:</strong> Clique no icone de jornal;
