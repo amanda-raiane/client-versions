@@ -25,8 +25,8 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Análise de relatório geral de clientes com IA, ",
-    "Configurar da tarefa do fluxo de entrada para o fluxo de trabalho, ",
+    "Análise de relatório de clientes com IA, ",
+    "Configurar a tarefa do fluxo de entrada para o fluxo de trabalho, ",
     "Armazenamento de checklist padrão para o fluxo de trabalho,  ",
     "Visualização de colunas no relatório geral de clientes, ",
     "Email personalizado para solicitação de assinatura.",
@@ -43,7 +43,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              6 de dezembro de 2024 <span>v1.22.0</span>
+              5 de dezembro de 2024 <span>v1.22.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -56,19 +56,19 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Configurar da tarefa do fluxo de entrada para o fluxo de trabalho
+              Conheça a SARA, nossa inteligência artificial!
             </h2>
             <p className="sm:text-lg">
-              A SARA nossa IA chegou para poder ajudar você a fazer algumas
-              analises de novos clientes.
+              A SARA chegou para ajudar você a realizar análises de novos
+              clientes.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. No Menu:</strong> em Relatório/Novos Clientes
               </li>
               <li>
-                <strong>2. Na página:</strong> Terá um ícone no canto inferior
-                direito com nossa IA
+                <strong>2. Na página:</strong> Clique no ícone no canto inferior
+                direito para acessar a SARA.
               </li>
             </ol>
             <Link
@@ -94,20 +94,20 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Configurar da tarefa do fluxo de entrada para o fluxo de trabalho,
+              Configurar a tarefa do fluxo de entrada para o fluxo de trabalho
             </h2>
             <p className="sm:text-lg">
-              Agora é possivel a persolização das tarefas exportado dos fluxo de
+              Agora é possível personalizar as tarefas exportadas dos fluxos de
               entrada para o fluxo de trabalho.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Nos fluxos de entrada:</strong> Selecione uma tarefa
-                e clique no botão com ícone de enviar
+                e clique no botão com o ícone de enviar.
               </li>
               <li>
-                <strong>1. Clique em:</strong> Compartilhar com fluxos de
-                trabalho, com isso será aberto os campos para serem preenchidos
+                <strong>2. Clique em:</strong> Compartilhar com fluxos de
+                trabalho. Com isso, serão abertos os campos para preenchimento.
               </li>
             </ol>
             <Link
@@ -139,17 +139,17 @@ export default function Home() {
               Armazenamento de checklist padrão para o fluxo de trabalho
             </h2>
             <p className="sm:text-lg">
-              Agora é possível criar checklists padrões nos fluxos de trabalho,
-              para você não ter que ficar criando todas as vezes os mesmos.
+              Agora é possível criar checklists padrão nos fluxos de trabalho,
+              para que você não precise criar os mesmos itens repetidamente.
             </p>
-            <ol>
+            <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Menu:</strong> navege até os fluxos livres,
-                escolha o quadro que deseja cadastrar o checklist;
+                <strong>1. No menu:</strong> Navegue até os fluxos de trabalho e
+                escolha o quadro onde deseja cadastrar o checklist.
               </li>
               <li>
                 <strong>2. Checklist:</strong> Clique no ícone de checklist, ao
-                lado do ícone de engrenagem;
+                lado do ícone de engrenagem.
               </li>
               <li className="flex flex-wrap">
                 <strong>3. Checklists do quadro:</strong> Nele aparecerá todos
@@ -157,6 +157,7 @@ export default function Home() {
                 <span className="ml-1 border rounded-full flex place-items-center p-1">
                   <Plus />
                 </span>
+                para incluir um novo.
               </li>
             </ol>
             <Link
@@ -185,26 +186,20 @@ export default function Home() {
               Modificado
             </p>
             <h2 className="sm:text-3xl text-2xl">
-              Relatório Geral de clientes quais colunas deseja visualizar
+              Relatório Geral de Clientes: escolha as colunas que deseja
+              visualizar
             </h2>
             <p className="sm:text-lg">
-              Agora você pode definir quais colunas você que visualizar no
+              Agora você pode definir quais colunas deseja visualizar no
               relatório geral de clientes.
             </p>
-            <ol>
+            <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Menu:</strong> Relatórios geral de clientes
+                <strong>1. No Menu:</strong> Relatórios geral de clientes
               </li>
               <li>
-                <strong>2. Checklist:</strong> Clique no ícone de checklist, ao
-                lado do ícone de engrenagem;
-              </li>
-              <li className="flex flex-wrap">
-                <strong>3. Checklists do quadro:</strong> Nele aparecerá todos
-                seus checklist cadastrados nesse quadro. Clique no botão de{" "}
-                <span className="ml-1 border rounded-full flex place-items-center p-1">
-                  <Plus />
-                </span>
+                <strong>2. No relatório:</strong> Clique no botão (Exibir) para
+                escolher as colunas.
               </li>
             </ol>
             <Link
@@ -233,21 +228,20 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Email personalizado para solicitação de assinatura
+              E-mail Personalizado para Solicitação de Assinatura
             </h2>
             <p className="sm:text-lg">
-              Caso você tenha um SMTP agora você pode personalizar o email de
-              envio para assinatura de contratos.
+              Agora, se você tiver um SMTP configurado, pode personalizar o
+              e-mail de envio para a assinatura de contratos
             </p>
-            <ol>
+            <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. No Menu:</strong> Navegue até as configurações
               </li>
               <li>
-                <strong>2. Contratos:</strong> Na sessão de contratos dentros
-                das configurações, clique na opção{" "}
-                <strong>SMTP e E-mail</strong>. Depois basta preencher os campos
-                com a informações
+                <strong>2. Contratos:</strong> Na seção de contratos dentro das
+                configurações, clique na opção SMTP e E-mail. Em seguida,
+                preencha os campos com as informações necessárias.
               </li>
             </ol>
             <Link
