@@ -11,19 +11,25 @@ import { SessionOtherResources } from "./components/SessionOtherResources";
 import PageHeader from "./components/PageHeader";
 
 import { useTheme } from "next-themes";
+import { Plus } from "@phosphor-icons/react";
+
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import darkMode from "@/app/images/versions/1_21_0/dark-mode.png";
-import nps from "@/app/images/versions/1_21_0/nps-mod.png";
-import exportWorkFlow from "@/app/images/versions/1_21_0/export-work-flow.png";
+import saraIa from "@/app/images/versions/1_22_0/sara-ia.png";
+import customInformationFreeFlow from "@/app/images/versions/1_22_0/custom-information-free-flow.png";
+import freeFlowChecklist from "@/app/images/versions/1_22_0/free-flow-checklist.png";
+import geralReportVisibility from "@/app/images/versions/1_22_0/geral-report-visibility.png";
+import customContractEmail from "@/app/images/versions/1_22_0/custon-contract-email.png";
 
 export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Exporte relatórios de tarefas no fluxos de trabalho, ",
-    "Melhoria no NPS, ",
-    "Altere entre o light e dark mode ",
+    "Análise de relatório geral de clientes com IA, ",
+    "Configurar da tarefa do fluxo de entrada para o fluxo de trabalho, ",
+    "Armazenamento de checklist padrão para o fluxo de trabalho,  ",
+    "Visualização de colunas no relatório geral de clientes, ",
+    "Email personalizado para solicitação de assinatura.",
   ];
   return (
     <>
@@ -37,7 +43,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              25 de novembro de 2024 <span>v1.21.0</span>
+              6 de dezembro de 2024 <span>v1.22.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -49,33 +55,35 @@ export default function Home() {
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Dark Mode</h2>
+            <h2 className="sm:text-3xl text-2xl">
+              Configurar da tarefa do fluxo de entrada para o fluxo de trabalho
+            </h2>
             <p className="sm:text-lg">
-              Agora você escolhe entre dark ou light mode na interface do G
-              Client.
+              A SARA nossa IA chegou para poder ajudar você a fazer algumas
+              analises de novos clientes.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na navbar:</strong> Clique nos botões de dark ou
-                light;.
+                <strong>1. No Menu:</strong> em Relatório/Novos Clientes
+              </li>
+              <li>
+                <strong>2. Na página:</strong> Terá um ícone no canto inferior
+                direito com nossa IA
               </li>
             </ol>
             <Link
-              className="hidden"
               target="_blank"
-              href={
-                "https://ajuda.gclient.com.br/docs/category/assinatura-de-contratos"
-              }
+              href={"https://ajuda.gclient.com.br/docs/category/nossa-ia-sara"}
             >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={darkMode}
+              src={saraIa}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print do kaban"
+              alt="print Sara Ia"
             />
           </div>
         </section>
@@ -86,20 +94,20 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Exportar tarefas do fluxo de trabalho
+              Configurar da tarefa do fluxo de entrada para o fluxo de trabalho,
             </h2>
             <p className="sm:text-lg">
-              Agora você pode exportar os seus quadros dos fluxos de trabalho em
-              PDF, além disso os filtros da tarefas seram refletidos na
-              exportação.
+              Agora é possivel a persolização das tarefas exportado dos fluxo de
+              entrada para o fluxo de trabalho.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. No fluxos de trabalho:</strong> Seleciona um quadro
-                de deseja exportar
+                <strong>1. Nos fluxos de entrada:</strong> Selecione uma tarefa
+                e clique no botão com ícone de enviar
               </li>
               <li>
-                <strong>1. No quadro:</strong> Selecione o botão de exportar
+                <strong>1. Clique em:</strong> Compartilhar com fluxos de
+                trabalho, com isso será aberto os campos para serem preenchidos
               </li>
             </ol>
             <Link
@@ -114,41 +122,48 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={exportWorkFlow}
+              src={customInformationFreeFlow}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print do kaban"
+              alt="print do modal de enviar fluxos de entrada para os fluxos livres"
             />
           </div>
         </section>
 
         <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
           <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
-            <span className="bg-yellow-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              modificado
+            <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
+              Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Novidades no NPS</h2>
+            <h2 className="sm:text-3xl text-2xl">
+              Armazenamento de checklist padrão para o fluxo de trabalho
+            </h2>
             <p className="sm:text-lg">
-              Agora você criar templates de email no NPS e de obrigado. Além
-              disso agora tem um gráfico muito mais detalhado.
+              Agora é possível criar checklists padrões nos fluxos de trabalho,
+              para você não ter que ficar criando todas as vezes os mesmos.
             </p>
             <ol>
               <li>
-                <strong>1. Na Menu:</strong> Clique no icone de NPS;
+                <strong>1. Na Menu:</strong> navege até os fluxos livres,
+                escolha o quadro que deseja cadastrar o checklist;
               </li>
               <li>
-                <strong>2. Resultados:</strong> Clique no icone de jornal;
+                <strong>2. Checklist:</strong> Clique no ícone de checklist, ao
+                lado do ícone de engrenagem;
               </li>
-              <li>
-                <strong>3. Nos resultados:</strong> Nele você pode visualizar os
-                resultados de forma detalhada.;
+              <li className="flex flex-wrap">
+                <strong>3. Checklists do quadro:</strong> Nele aparecerá todos
+                seus checklist cadastrados nesse quadro. Clique no botão de{" "}
+                <span className="ml-1 border rounded-full flex place-items-center p-1">
+                  <Plus />
+                </span>
               </li>
             </ol>
             <Link
               className=""
               target="_blank"
               href={
-                "https://ajuda.gclient.com.br/docs/category/gestão-de-clientes/nps"
+                "https://ajuda.gclient.com.br/docs/free-flows/custom-checklist"
               }
             >
               <PrimaryButton text={"Ver tutorial"} />
@@ -156,10 +171,101 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={nps}
+              src={freeFlowChecklist}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print do kaban"
+              alt="print dos checklist nos fluxos de trabalho"
+            />
+          </div>
+        </section>
+
+        <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
+          <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
+            <p className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
+              Modificado
+            </p>
+            <h2 className="sm:text-3xl text-2xl">
+              Relatório Geral de clientes quais colunas deseja visualizar
+            </h2>
+            <p className="sm:text-lg">
+              Agora você pode definir quais colunas você que visualizar no
+              relatório geral de clientes.
+            </p>
+            <ol>
+              <li>
+                <strong>1. Na Menu:</strong> Relatórios geral de clientes
+              </li>
+              <li>
+                <strong>2. Checklist:</strong> Clique no ícone de checklist, ao
+                lado do ícone de engrenagem;
+              </li>
+              <li className="flex flex-wrap">
+                <strong>3. Checklists do quadro:</strong> Nele aparecerá todos
+                seus checklist cadastrados nesse quadro. Clique no botão de{" "}
+                <span className="ml-1 border rounded-full flex place-items-center p-1">
+                  <Plus />
+                </span>
+              </li>
+            </ol>
+            <Link
+              className="hidden"
+              target="_blank"
+              href={
+                "https://ajuda.gclient.com.br/docs/free-flows/custom-checklist"
+              }
+            >
+              <PrimaryButton text={"Ver tutorial"} />
+            </Link>
+          </div>
+          <div>
+            <Image
+              src={geralReportVisibility}
+              quality={100}
+              className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
+              alt="print dos relatório geral de clientes, modal de visualização"
+            />
+          </div>
+        </section>
+
+        <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
+          <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
+            <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
+              Adicionado
+            </span>
+            <h2 className="sm:text-3xl text-2xl">
+              Email personalizado para solicitação de assinatura
+            </h2>
+            <p className="sm:text-lg">
+              Caso você tenha um SMTP agora você pode personalizar o email de
+              envio para assinatura de contratos.
+            </p>
+            <ol>
+              <li>
+                <strong>1. No Menu:</strong> Navegue até as configurações
+              </li>
+              <li>
+                <strong>2. Contratos:</strong> Na sessão de contratos dentros
+                das configurações, clique na opção{" "}
+                <strong>SMTP e E-mail</strong>. Depois basta preencher os campos
+                com a informações
+              </li>
+            </ol>
+            <Link
+              className="hidden"
+              target="_blank"
+              href={
+                "https://ajuda.gclient.com.br/docs/other-configs/contract-email"
+              }
+            >
+              <PrimaryButton text={"Ver tutorial"} />
+            </Link>
+          </div>
+          <div>
+            <Image
+              src={customContractEmail}
+              quality={100}
+              className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
+              alt="print dos relatório geral de clientes, modal de visualização"
             />
           </div>
         </section>
@@ -174,18 +280,7 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>
-                  Exibir canal de aquisição no relatório de novos clientes
-                </li>
-                <li>
-                  Filtro por tipo de saída no relatório de saída de clientes
-                </li>
-                <li>
-                  Adicionado tipo de saída Migração de ME/MEI no processo de
-                  offboarding
-                </li>
-                <li>Duplicar tarefa no fluxo de trabalho</li>
-                <li>Excluir quadros do fluxo de trabalho</li>
+                <li>Excluir status no fluxo de trabalho</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -194,11 +289,14 @@ export default function Home() {
               </p>
               <ul className="flex flex-col gap-2">
                 <li>
-                  Exibir regime tributário no relatório de clientes por
-                  responsável
+                  Definir qual foi a última competência atendida ao inativar o
+                  cliente
                 </li>
-                <li>Alterado o nome de Fluxo livre para Fluxo de trabalho</li>
-                <li>Validado que o código da domínio cadastrado seja único</li>
+                <li>
+                  Não exibir por padrão os clientes inativos no relatório geral
+                  de clientes
+                </li>
+                <li>Alterado domínio do sistema</li>
               </ul>
             </div>
           </div>

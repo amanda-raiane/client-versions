@@ -11,6 +11,7 @@ import imageHome from "@/app/images/versions/1_13_0/menu.png";
 import registerOcorrenceMenu from "@/app/images/versions/1_14_0/cadastro-via-menu.png";
 import imageKaban from "@/app/images/versions/1_19_0/kaban.png";
 import imageSign from "@/app/images/versions/1_20_0/sign.png";
+import darkMode from "@/app/images/versions/1_21_0/dark-mode.png";
 
 export function SessionOtherResources() {
   return (
@@ -18,6 +19,14 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-21-0"
+            date="25 de novembro de 2024"
+            imageUrl={darkMode}
+            version="v1.21.0"
+            title="Alterne entre o light e dark mode no G Client."
+          />
+
           <OtherVersion
             link="/versao-1-20-1"
             date="4 de novembro de 2024"
