@@ -15,21 +15,17 @@ import { Plus } from "@phosphor-icons/react";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import saraIa from "@/app/images/versions/1_22_0/sara-ia.png";
-import customInformationFreeFlow from "@/app/images/versions/1_22_0/custom-information-free-flow.png";
+import SearchContract from "@/app/images/versions/1_23_0/search-contract.png";
+import Communication from "@/app/images/versions/1_23_0/communication.png";
 import freeFlowChecklist from "@/app/images/versions/1_22_0/free-flow-checklist.png";
-import geralReportVisibility from "@/app/images/versions/1_22_0/geral-report-visibility.png";
-import customContractEmail from "@/app/images/versions/1_22_0/custon-contract-email.png";
 
 export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Análise de relatório de clientes com IA, ",
-    "Configurar a tarefa do fluxo de entrada para o fluxo de trabalho, ",
-    "Armazenamento de checklist padrão para o fluxo de trabalho,  ",
-    "Visualização de colunas no relatório geral de clientes, ",
-    "Email personalizado para solicitação de assinatura.",
+    "Campo de busca nos contratos, ",
+    "Comunicados em massa via email, ",
+    "Análise com IA no relatório de saída de clientes.",
   ];
   return (
     <>
@@ -43,7 +39,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              5 de dezembro de 2024 <span>v1.22.0</span>
+              2 de janeiro de 2025 <span>v1.23.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -56,31 +52,28 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Conheça a SARA, nossa inteligência artificial!
+              Campo de busca nos contratos
             </h2>
             <p className="sm:text-lg">
-              A SARA chegou para ajudar você a realizar análises de novos
-              clientes.
+              Agora você pode buscar pelo no tela de contratos.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. No Menu:</strong> em Relatório/Novos Clientes
+                <strong>1. Na Navebar:</strong> navege até a sessão GESTÃO DE
+                ARQUIVOS, e selecione &quot;Meus contratos&quot;.
               </li>
               <li>
-                <strong>2. Na página:</strong> Clique no ícone no canto inferior
-                direito para acessar a SARA.
+                <strong>2. Na página:</strong> Terá um campo de busca, basta
+                escrever o nome do arquivo que você o encontrará.
               </li>
             </ol>
-            <Link
-              target="_blank"
-              href={"https://ajuda.gclient.com.br/docs/category/nossa-ia-sara"}
-            >
+            <Link className="hidden" target="_blank" href={"#"}>
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={saraIa}
+              src={SearchContract}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print Sara Ia"
@@ -94,35 +87,34 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Configurar a tarefa do fluxo de entrada para o fluxo de trabalho
+              Comunicados em massa via email
             </h2>
             <p className="sm:text-lg">
-              Agora é possível personalizar as tarefas exportadas dos fluxos de
-              entrada para o fluxo de trabalho.
+              Vai entrar de férias?! Agora você pode enviar um comunicado para
+              seus clientes, onde será disparado email para eles.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Nos fluxos de entrada:</strong> Selecione uma tarefa
-                e clique no botão com o ícone de enviar.
+                <strong>1. Na Navebar:</strong> Navegue até a sessão GESTÃO DE
+                CLIENTES, e selecione &quot;Comunicados&quot;.
               </li>
               <li>
-                <strong>2. Clique em:</strong> Compartilhar com fluxos de
-                trabalho. Com isso, serão abertos os campos para preenchimento.
+                <strong>2. Na página:</strong> Clique no botão &quot;Criar
+                Comunicado&quot;, e preencha os campos para poder criar o
+                comunicado.
+              </li>
+              <li>
+                <strong>3. Envio:</strong> Para enviar basta clicar no botão de
+                ação e clicar no opção &quot;Enviar&quot;.
               </li>
             </ol>
-            <Link
-              className="hidden"
-              target="_blank"
-              href={
-                "https://ajuda.gclient.com.br/docs/category/assinatura-de-contratos"
-              }
-            >
+            <Link target="_blank" href={"https://ajuda.gclient.com.br/"}>
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={customInformationFreeFlow}
+              src={Communication}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print do modal de enviar fluxos de entrada para os fluxos livres"
@@ -136,36 +128,25 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Armazenamento de checklist padrão para o fluxo de trabalho
+              Análise com IA no relatório de saída de clientes.
             </h2>
             <p className="sm:text-lg">
-              Agora é possível criar checklists padrão nos fluxos de trabalho,
-              para que você não precise criar os mesmos itens repetidamente.
+              A SARA ataca novamente, só que agora nos relatórios de saída de
+              cliente.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. No menu:</strong> Navegue até os fluxos de trabalho e
-                escolha o quadro onde deseja cadastrar o checklist.
+                <strong>1. No Menu:</strong> em Relatório/Saída de Clientes
               </li>
               <li>
-                <strong>2. Checklist:</strong> Clique no ícone de checklist, ao
-                lado do ícone de engrenagem.
-              </li>
-              <li className="flex flex-wrap">
-                <strong>3. Checklists do quadro:</strong> Nele aparecerá todos
-                seus checklist cadastrados nesse quadro. Clique no botão de{" "}
-                <span className="ml-1 border rounded-full flex place-items-center p-1">
-                  <Plus />
-                </span>
-                para incluir um novo.
+                <strong>2. Na página:</strong> Clique no ícone no canto inferior
+                direito para acessar a SARA.
               </li>
             </ol>
             <Link
               className=""
               target="_blank"
-              href={
-                "https://ajuda.gclient.com.br/docs/free-flows/custom-checklist"
-              }
+              href={"https://ajuda.gclient.com.br"}
             >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
@@ -180,90 +161,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
-          <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
-            <p className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
-              Modificado
-            </p>
-            <h2 className="sm:text-3xl text-2xl">
-              Relatório Geral de Clientes: escolha as colunas que deseja
-              visualizar
-            </h2>
-            <p className="sm:text-lg">
-              Agora você pode definir quais colunas deseja visualizar no
-              relatório geral de clientes.
-            </p>
-            <ol className="space-y-6 pb-8">
-              <li>
-                <strong>1. No Menu:</strong> Relatórios geral de clientes
-              </li>
-              <li>
-                <strong>2. No relatório:</strong> Clique no botão (Exibir) para
-                escolher as colunas.
-              </li>
-            </ol>
-            <Link
-              className="hidden"
-              target="_blank"
-              href={
-                "https://ajuda.gclient.com.br/docs/free-flows/custom-checklist"
-              }
-            >
-              <PrimaryButton text={"Ver tutorial"} />
-            </Link>
-          </div>
-          <div>
-            <Image
-              src={geralReportVisibility}
-              quality={100}
-              className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print dos relatório geral de clientes, modal de visualização"
-            />
-          </div>
-        </section>
-
-        <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
-          <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
-            <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              Adicionado
-            </span>
-            <h2 className="sm:text-3xl text-2xl">
-              E-mail Personalizado para Solicitação de Assinatura
-            </h2>
-            <p className="sm:text-lg">
-              Agora, se você tiver um SMTP configurado, pode personalizar o
-              e-mail de envio para a assinatura de contratos
-            </p>
-            <ol className="space-y-6 pb-8">
-              <li>
-                <strong>1. No Menu:</strong> Navegue até as configurações
-              </li>
-              <li>
-                <strong>2. Contratos:</strong> Na seção de contratos dentro das
-                configurações, clique na opção SMTP e E-mail. Em seguida,
-                preencha os campos com as informações necessárias.
-              </li>
-            </ol>
-            <Link
-              className="hidden"
-              target="_blank"
-              href={
-                "https://ajuda.gclient.com.br/docs/other-configs/contract-email"
-              }
-            >
-              <PrimaryButton text={"Ver tutorial"} />
-            </Link>
-          </div>
-          <div>
-            <Image
-              src={customContractEmail}
-              quality={100}
-              className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print dos relatório geral de clientes, modal de visualização"
-            />
-          </div>
-        </section>
-
         <section className="2xl:px-64 px-5 lg:my-36 my-20">
           <h2 className="text-2xl font-medium mb-5">
             Demais itens nesta versão
@@ -274,7 +171,12 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Excluir status no fluxo de trabalho</li>
+                <li>Filtrar pela cidade no relatório geral de clientes</li>
+                <li>Filtrar clientes com período de aviso encerrado</li>
+                <li>Novos motivos de saída de clientes</li>
+                <li>Notificar quando trocar o responsável da tarefa</li>
+                <li>Filtrar tarefas por tag no fluxo de trabalho</li>
+                <li>Filtro por segmento na lista de clientes</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -283,14 +185,21 @@ export default function Home() {
               </p>
               <ul className="flex flex-col gap-2">
                 <li>
-                  Definir qual foi a última competência atendida ao inativar o
-                  cliente
+                  Exibir processo de entrada no relatório de saída de clientes
                 </li>
+                <li>Melhorias visuais na página de informação do cliente</li>
+                <li>Filtrar clientes com período de aviso encerrado</li>
                 <li>
-                  Não exibir por padrão os clientes inativos no relatório geral
-                  de clientes
+                  Melhorias visuais na página de quadros do fluxo de trabalho
                 </li>
-                <li>Alterado domínio do sistema</li>
+              </ul>
+            </div>
+            <div className="md:max-w-[30%]">
+              <p className="bg-red-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
+                Removido
+              </p>
+              <ul className="flex flex-col gap-2">
+                <li>Removido campo nome do formulário de resposta do NPS</li>
               </ul>
             </div>
           </div>
