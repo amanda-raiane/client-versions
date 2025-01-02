@@ -17,7 +17,7 @@ import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 import SearchContract from "@/app/images/versions/1_23_0/search-contract.png";
 import Communication from "@/app/images/versions/1_23_0/communication.png";
-import freeFlowChecklist from "@/app/images/versions/1_22_0/free-flow-checklist.png";
+import IaSara from "@/app/images/versions/1_23_0/ia-sara.png";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={freeFlowChecklist}
+              src={IaSara}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print dos checklist nos fluxos de trabalho"
