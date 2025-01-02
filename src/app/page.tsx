@@ -108,7 +108,12 @@ export default function Home() {
                 ação e clicar no opção &quot;Enviar&quot;.
               </li>
             </ol>
-            <Link target="_blank" href={"https://ajuda.gclient.com.br/"}>
+            <Link
+              target="_blank"
+              href={
+                "https://ajuda.gclient.com.br/docs/customer-management/communication"
+              }
+            >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
@@ -146,7 +151,7 @@ export default function Home() {
             <Link
               className=""
               target="_blank"
-              href={"https://ajuda.gclient.com.br"}
+              href={"https://ajuda.gclient.com.br/docs/ia/customer-exit-report"}
             >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
