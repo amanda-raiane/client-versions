@@ -55,16 +55,17 @@ export default function Home() {
               Campo de busca nos contratos
             </h2>
             <p className="sm:text-lg">
-              Agora você pode buscar pelo no tela de contratos.
+              Agora você pode buscar diretamente na tela de contratos.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navebar:</strong> navege até a sessão GESTÃO DE
-                ARQUIVOS, e selecione &quot;Meus contratos&quot;.
+                <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
+                <strong>GESTÃO DE ARQUIVOS</strong> e selecione &quot;Meus
+                contratos&quot;.
               </li>
               <li>
-                <strong>2. Na página:</strong> Terá um campo de busca, basta
-                escrever o nome do arquivo que você o encontrará.
+                <strong>2. Na página:</strong> Haverá um campo de busca. Basta
+                escrever o nome do arquivo e ele será localizado.
               </li>
             </ol>
             <Link className="hidden" target="_blank" href={"#"}>
@@ -87,25 +88,26 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Comunicados em massa via email
+              Comunicados em massa via e-mail
             </h2>
             <p className="sm:text-lg">
               Vai entrar de férias?! Agora você pode enviar um comunicado para
-              seus clientes, onde será disparado email para eles.
+              seus clientes, e-mails serão disparados automaticamente para eles.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navebar:</strong> Navegue até a sessão GESTÃO DE
-                CLIENTES, e selecione &quot;Comunicados&quot;.
+                <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
+                <strong>GESTÃO DE CLIENTES</strong> e selecione
+                &quot;Comunicados&quot;.
               </li>
               <li>
-                <strong>2. Na página:</strong> Clique no botão &quot;Criar
-                Comunicado&quot;, e preencha os campos para poder criar o
-                comunicado.
+                <strong>2. Na página:</strong> Clique no botão{" "}
+                <strong>&quot;Criar Comunicado&quot;</strong> e preencha os
+                campos para criar o comunicado.
               </li>
               <li>
-                <strong>3. Envio:</strong> Para enviar basta clicar no botão de
-                ação e clicar no opção &quot;Enviar&quot;.
+                <strong>3. Envio:</strong> Para enviar, basta clicar no botão de
+                ação e selecionar a opção <strong>&quot;Enviar&quot;</strong>.
               </li>
             </ol>
             <Link
@@ -133,19 +135,20 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Análise com IA no relatório de saída de clientes.
+              Análise com IA no relatório de saída de clientes
             </h2>
             <p className="sm:text-lg">
-              A SARA ataca novamente, só que agora nos relatórios de saída de
-              cliente.
+              A SARA ataca novamente, mas agora nos relatórios de saída de
+              clientes.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. No Menu:</strong> em Relatório/Saída de Clientes
+                <strong>1. No Menu:</strong> Acesse{" "}
+                <strong> Relatório &gt; Saída de Clientes</strong>.
               </li>
               <li>
                 <strong>2. Na página:</strong> Clique no ícone no canto inferior
-                direito para acessar a SARA.
+                direito para acessar a <strong>SARA</strong>.
               </li>
             </ol>
             <Link
@@ -193,7 +196,6 @@ export default function Home() {
                   Exibir processo de entrada no relatório de saída de clientes
                 </li>
                 <li>Melhorias visuais na página de informação do cliente</li>
-                <li>Filtrar clientes com período de aviso encerrado</li>
                 <li>
                   Melhorias visuais na página de quadros do fluxo de trabalho
                 </li>
