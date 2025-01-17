@@ -39,7 +39,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              24 de janeiro de 2025 <span>v1.24.0</span>
+              13 de janeiro de 2025 <span>v1.24.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -98,7 +98,7 @@ export default function Home() {
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
                 <strong>Ferramentas</strong>. Você poderá escolher entre{" "}
-                <strong>fator r</strong> e <strong>PF x PJ</strong>
+                <strong>Fator R</strong> e <strong>PF x PJ</strong>
               </li>
               <li>
                 <strong>2. Na página:</strong> Basta você preencher o campo com
@@ -140,7 +140,7 @@ export default function Home() {
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a sessão
-                <strong>NPS</strong> e crie sua campanha NPS.
+                <strong> NPS</strong> e crie sua campanha NPS.
               </li>
               <li>
                 <strong>2. Disparo de email:</strong> Assim que criado a
