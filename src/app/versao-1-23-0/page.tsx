@@ -3,21 +3,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Footer } from "./components/Footer";
-import { ThemeChanger } from "./components/ThemeChanger.tsx";
-import { PrimaryButton } from "./components/PrimaryButton";
+import { Footer } from "../components/Footer";
+import { ThemeChanger } from "../components/ThemeChanger.tsx";
+import { PrimaryButton } from "../components/PrimaryButton";
 
-import { SessionOtherResources } from "./components/SessionOtherResources";
-import PageHeader from "./components/PageHeader";
+import { SessionOtherResources } from "../components/SessionOtherResources";
+import PageHeader from "../components/PageHeader";
 
 import { useTheme } from "next-themes";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import LoteAction from "@/app/images/versions/1_24_0/lote-action.png";
-import Calculator from "@/app/images/versions/1_24_0/calculator.png";
-import NpsSender from "@/app/images/versions/1_24_0/npsSender.png";
-import ProblemAi from "@/app/images/versions/1_24_0/problem-ai.png";
+import SearchContract from "@/app/images/versions/1_23_0/search-contract.png";
+import Communication from "@/app/images/versions/1_23_0/communication.png";
+import IaSara from "@/app/images/versions/1_23_0/ia-sara.png";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -39,7 +38,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              13 de janeiro de 2025 <span>v1.24.0</span>
+              3 de janeiro de 2025 <span>v1.23.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -51,23 +50,21 @@ export default function Home() {
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Alterar honorário em lote</h2>
+            <h2 className="sm:text-3xl text-2xl">
+              Campo de busca nos contratos
+            </h2>
             <p className="sm:text-lg">
-              Agora você não precisa ficar alterando o honorário um por um, pode
-              fazer esse ajuste em lote.
+              Agora você pode buscar diretamente na tela de contratos.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
-                <strong>Gestão de Clientes</strong> e selecione{" "}
-                <strong>Ações em lote</strong>.
+                <strong>GESTÃO DE ARQUIVOS</strong> e selecione &quot;Meus
+                contratos&quot;.
               </li>
               <li>
-                <strong>Na página:</strong> haverá um campo para inserir o valor
-                desejado. Você pode especificar o valor que deseja aumentar ou
-                diminuir. Se preferir, é possível visualizar o resultado antes
-                de confirmar a alteração clicando no botão{" "}
-                <strong>Visualizar alterações</strong>.
+                <strong>2. Na página:</strong> Haverá um campo de busca. Basta
+                escrever o nome do arquivo e ele será localizado.
               </li>
             </ol>
             <Link className="hidden" target="_blank" href={"#"}>
@@ -76,7 +73,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={LoteAction}
+              src={SearchContract}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print Sara Ia"
@@ -89,25 +86,30 @@ export default function Home() {
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Calculadoras auxiliares</h2>
+            <h2 className="sm:text-3xl text-2xl">
+              Comunicados em massa via e-mail
+            </h2>
             <p className="sm:text-lg">
-              Agora no G Client nós temos uma calculadora para auxiliar no seu
-              dia a dia.
+              Vai entrar de férias?! Agora você pode enviar um comunicado para
+              seus clientes, e-mails serão disparados automaticamente para eles.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
-                <strong>Ferramentas</strong>. Você poderá escolher entre{" "}
-                <strong>Fator R</strong> e <strong>PF x PJ</strong>
+                <strong>GESTÃO DE CLIENTES</strong> e selecione
+                &quot;Comunicados&quot;.
               </li>
               <li>
-                <strong>2. Na página:</strong> Basta você preencher o campo com
-                as informações necessárias e por fim clicar em{" "}
-                <strong>Calcular</strong>
+                <strong>2. Na página:</strong> Clique no botão{" "}
+                <strong>&quot;Criar Comunicado&quot;</strong> e preencha os
+                campos para criar o comunicado.
+              </li>
+              <li>
+                <strong>3. Envio:</strong> Para enviar, basta clicar no botão de
+                ação e selecionar a opção <strong>&quot;Enviar&quot;</strong>.
               </li>
             </ol>
             <Link
-              className="hidden"
               target="_blank"
               href={
                 "https://ajuda.gclient.com.br/docs/customer-management/communication"
@@ -118,51 +120,10 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={Calculator}
+              src={Communication}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print do modal de enviar fluxos de entrada para os fluxos livres"
-            />
-          </div>
-        </section>
-
-        <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
-          <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
-            <span className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
-              Modificado
-            </span>
-            <h2 className="sm:text-3xl text-2xl">
-              Remetente de email personalizado no NPS
-            </h2>
-            <p className="sm:text-lg">
-              Agora você pode enviar um pesquida com o remetente personalizado.
-            </p>
-            <ol className="space-y-6 pb-8">
-              <li>
-                <strong>1. Na Navebar:</strong> Navegue até a sessão
-                <strong> NPS</strong> e crie sua campanha NPS.
-              </li>
-              <li>
-                <strong>2. Disparo de email:</strong> Assim que criado a
-                campanha, clique no botão para enviar, com isso será aberto um
-                modal onde você pode selecionar o{" "}
-                <strong>Email do rementente</strong>.
-              </li>
-            </ol>
-            <Link
-              className="hidden"
-              target="_blank"
-              href={"https://ajuda.gclient.com.br/docs/ia/customer-exit-report"}
-            >
-              <PrimaryButton text={"Ver tutorial"} />
-            </Link>
-          </div>
-          <div>
-            <Image
-              src={NpsSender}
-              quality={100}
-              className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print dos checklist nos fluxos de trabalho"
             />
           </div>
         </section>
@@ -173,16 +134,16 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Análise com IA no relatório de problemas
+              Análise com IA no relatório de saída de clientes
             </h2>
             <p className="sm:text-lg">
               A SARA ataca novamente, mas agora nos relatórios de saída de
-              problemas.
+              clientes.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navbar:</strong> Navegue atté a sessão{" "}
-                <strong> Relatório &gt; Problemas</strong>.
+                <strong>1. No Menu:</strong> Acesse{" "}
+                <strong> Relatório &gt; Saída de Clientes</strong>.
               </li>
               <li>
                 <strong>2. Na página:</strong> Clique no ícone no canto inferior
@@ -190,7 +151,7 @@ export default function Home() {
               </li>
             </ol>
             <Link
-              className="hidden"
+              className=""
               target="_blank"
               href={"https://ajuda.gclient.com.br/docs/ia/customer-exit-report"}
             >
@@ -199,7 +160,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={ProblemAi}
+              src={IaSara}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print dos checklist nos fluxos de trabalho"
@@ -217,8 +178,12 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Múltiplos checklists nos quadros de fluxo de trabalho</li>
-                <li>Salvar data de aniversário dos sócios</li>
+                <li>Filtrar pela cidade no relatório geral de clientes</li>
+                <li>Filtrar clientes com período de aviso encerrado</li>
+                <li>Novos motivos de saída de clientes</li>
+                <li>Notificar quando trocar o responsável da tarefa</li>
+                <li>Filtrar tarefas por tag no fluxo de trabalho</li>
+                <li>Filtro por segmento na lista de clientes</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -226,16 +191,21 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Data de aviso prévio personalizada no calendário</li>
                 <li>
-                  Corrigido: filtro de ano nos relatório de saída e clientes
-                  bloqueados
+                  Exibir processo de entrada no relatório de saída de clientes
                 </li>
+                <li>Melhorias visuais na página de informação do cliente</li>
                 <li>
-                  Não listar clientes inativos no relatório de clientes
-                  bloqueados
+                  Melhorias visuais na página de quadros do fluxo de trabalho
                 </li>
-                <li>Ajustes no layout do modal no NPS</li>
+              </ul>
+            </div>
+            <div className="md:max-w-[30%]">
+              <p className="bg-red-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
+                Removido
+              </p>
+              <ul className="flex flex-col gap-2">
+                <li>Removido campo nome do formulário de resposta do NPS</li>
               </ul>
             </div>
           </div>
