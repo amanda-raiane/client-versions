@@ -3,30 +3,29 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Footer } from "./components/Footer";
-import { ThemeChanger } from "./components/ThemeChanger.tsx";
-import { PrimaryButton } from "./components/PrimaryButton";
+import { Footer } from "@/app/components/Footer";
+import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
+import { PrimaryButton } from "@/app/components/PrimaryButton";
+import PageHeader from "@/app/components/PageHeader";
 
-import { SessionOtherResources } from "./components/SessionOtherResources";
-import PageHeader from "./components/PageHeader";
+import { SessionOtherResources } from "@/app/components/SessionOtherResources";
 
 import { useTheme } from "next-themes";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import AttachedCommunications from "@/app/images/versions/1_25_0/attached-communications.png";
-import Indicator from "@/app/images/versions/1_25_0/indicator.png";
-import DepartmentResponsible from "@/app/images/versions/1_25_0/changing-department-responsible.png";
-import ReportByCompetency from "@/app/images/versions/1_25_0/report-by-competency.png";
+import LoteAction from "@/app/images/versions/1_24_0/lote-action.png";
+import Calculator from "@/app/images/versions/1_24_0/calculator.png";
+import NpsSender from "@/app/images/versions/1_24_0/npsSender.png";
+import ProblemAi from "@/app/images/versions/1_24_0/problem-ai.png";
 
 export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Anexos nos comunicados, ",
-    "Indicadores: distribuição de clientes | receita recorrente | ranking de clientes, ",
-    "Ações em lote: alterar responsável do departamento, ",
-    "Relatório saída de clientes por competência",
+    "Campo de busca nos contratos, ",
+    "Comunicados em massa via email, ",
+    "Análise com IA no relatório de saída de clientes.",
   ];
   return (
     <>
@@ -52,21 +51,23 @@ export default function Home() {
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Anexos nos comunicados</h2>
+            <h2 className="sm:text-3xl text-2xl">Alterar honorário em lote</h2>
             <p className="sm:text-lg">
-              Anexos nos comunicados, facilitando a comunicação com os clientes,
-              tornando mais eficiente a distribuição de comunicados.
+              Agora você não precisa ficar alterando o honorário um por um, pode
+              fazer esse ajuste em lote.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
                 <strong>Gestão de Clientes</strong> e selecione{" "}
-                <strong>Comunicados</strong>.
+                <strong>Ações em lote</strong>.
               </li>
               <li>
-                <strong>2. Na página:</strong> Ao <strong>criar</strong> ou{" "}
-                <strong>editar</strong> algum comunicado, terá uma sessão
-                específica para anexos, basta selecionar os arquivos.
+                <strong>Na página:</strong> haverá um campo para inserir o valor
+                desejado. Você pode especificar o valor que deseja aumentar ou
+                diminuir. Se preferir, é possível visualizar o resultado antes
+                de confirmar a alteração clicando no botão{" "}
+                <strong>Visualizar alterações</strong>.
               </li>
             </ol>
             <Link className="hidden" target="_blank" href={"#"}>
@@ -75,7 +76,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src={AttachedCommunications}
+              src={LoteAction}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print Sara Ia"
@@ -88,35 +89,36 @@ export default function Home() {
             <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
               Adicionado
             </span>
-            <h2 className="sm:text-3xl text-2xl">Indicadores</h2>
+            <h2 className="sm:text-3xl text-2xl">Calculadoras auxiliares</h2>
             <p className="sm:text-lg">
-              Agora você pode visualizar a distribuição de clientes, a receita
-              recorrente e o ranking dos principais clientes diretamente no G
-              Client
+              Agora no G Client nós temos uma calculadora para auxiliar no seu
+              dia a dia.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
-                <strong>Gestão de clientes</strong> e clique na opção
-                <strong>Indicadores</strong>.
+                <strong>Ferramentas</strong>. Você poderá escolher entre{" "}
+                <strong>Fator R</strong> e <strong>PF x PJ</strong>
               </li>
               <li>
-                <strong>2. Na página:</strong> Você poderá escolher qual
-                indicador deseja visualizar.
-              </li>
-              <li>
-                <strong>3. Novo Indicador:</strong> Você também pode fazer
-                solicitação para novos indicadores clicando na opção{" "}
-                <strong>Solicitação de indicador</strong>.
+                <strong>2. Na página:</strong> Basta você preencher o campo com
+                as informações necessárias e por fim clicar em{" "}
+                <strong>Calcular</strong>
               </li>
             </ol>
-            <Link className="hidden" target="_blank" href={"#"}>
+            <Link
+              className="hidden"
+              target="_blank"
+              href={
+                "https://ajuda.gclient.com.br/docs/customer-management/communication"
+              }
+            >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={Indicator}
+              src={Calculator}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print do modal de enviar fluxos de entrada para os fluxos livres"
@@ -126,39 +128,38 @@ export default function Home() {
 
         <section className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row">
           <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
-            <span className="bg-blue-600 px-2 rounded-2xl py-1 text-xs uppercase tracking-widest font-semibold text-slate-50">
-              Adicionado
+            <span className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
+              Modificado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Ações em lote: alterar responsável do departamento
+              Remetente de email personalizado no NPS
             </h2>
             <p className="sm:text-lg">
-              Agora vocês também podem alterar o responsável do departamento em
-              lote, sem ter que fazer a alteração de um por um.
+              Agora você pode enviar um pesquida com o remetente personalizado.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navebar:</strong> Navegue até a sessão
-                <strong>Gestão de clientes</strong>, escolha a opção{" "}
-                <strong>Ações em lote</strong> e{" "}
-                <strong>Alterar responsável do departamento</strong>.
+                <strong> NPS</strong> e crie sua campanha NPS.
               </li>
               <li>
-                <strong>2. Alterar responsável:</strong> Selecione o
-                departamento e o responsável que deseja atribuir e clique em{" "}
-                <strong>Visualizar alterações</strong>. Isso permitirá que você
-                veja como ficará a mudança. Para confirmar, clique no botão{" "}
-                <strong>Confirmar alterações</strong>, localizado no final da
-                tabela.
+                <strong>2. Disparo de email:</strong> Assim que criado a
+                campanha, clique no botão para enviar, com isso será aberto um
+                modal onde você pode selecionar o{" "}
+                <strong>Email do rementente</strong>.
               </li>
             </ol>
-            <Link className="hidden" target="_blank" href={"#"}>
+            <Link
+              className="hidden"
+              target="_blank"
+              href={"https://ajuda.gclient.com.br/docs/ia/customer-exit-report"}
+            >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={DepartmentResponsible}
+              src={NpsSender}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print dos checklist nos fluxos de trabalho"
@@ -172,34 +173,33 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Relatório saída de clientes por competência
+              Análise com IA no relatório de problemas
             </h2>
             <p className="sm:text-lg">
-              Agora você pode visualizar um relatório de saída de clientes por
-              competência.
+              A SARA ataca novamente, mas agora nos relatórios de saída de
+              problemas.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
                 <strong>1. Na Navbar:</strong> Navegue atté a sessão{" "}
-                <strong>
-                  {" "}
-                  Relatório &gt; Saída de Clientes por Competência
-                </strong>
-                .
+                <strong> Relatório &gt; Problemas</strong>.
               </li>
               <li>
-                <strong>2. Na página:</strong> Você poderá visualizar os
-                clientes que saíram de acordo com a competência. Além disso,
-                poderá exportar os dados em planilha ou PDF.
+                <strong>2. Na página:</strong> Clique no ícone no canto inferior
+                direito para acessar a <strong>SARA</strong>.
               </li>
             </ol>
-            <Link className="hidden" target="_blank" href={"#"}>
+            <Link
+              className="hidden"
+              target="_blank"
+              href={"https://ajuda.gclient.com.br/docs/ia/customer-exit-report"}
+            >
               <PrimaryButton text={"Ver tutorial"} />
             </Link>
           </div>
           <div>
             <Image
-              src={ReportByCompetency}
+              src={ProblemAi}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
               alt="print dos checklist nos fluxos de trabalho"
@@ -217,9 +217,8 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Clientes fazendo aniversário de parceria</li>
-                <li>Prevenir perda do playbook</li>
-                <li>Alterado classificação do NPS</li>
+                <li>Múltiplos checklists nos quadros de fluxo de trabalho</li>
+                <li>Salvar data de aniversário dos sócios</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -227,11 +226,16 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Campo de busca de clientes nos comunicados</li>
-                <li>Exibir honorário no relatório de saída</li>
-                <li>Exibir conteúdo do comunicado</li>
+                <li>Data de aviso prévio personalizada no calendário</li>
+                <li>
+                  Corrigido: filtro de ano nos relatório de saída e clientes
+                  bloqueados
+                </li>
+                <li>
+                  Não listar clientes inativos no relatório de clientes
+                  bloqueados
+                </li>
                 <li>Ajustes no layout do modal no NPS</li>
-                <li>Exibir segmento na lista de clientes</li>
               </ul>
             </div>
           </div>
