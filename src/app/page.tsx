@@ -40,7 +40,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              13 de janeiro de 2025 <span>v1.24.0</span>
+              26 de fevereiro de 2025 <span>v1.25.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
