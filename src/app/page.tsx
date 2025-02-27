@@ -40,7 +40,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              26 de fevereiro de 2025 <span>v1.25.0</span>
+              27 de fevereiro de 2025 <span>v1.25.0</span>
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -54,19 +54,19 @@ export default function Home() {
             </span>
             <h2 className="sm:text-3xl text-2xl">Anexos nos comunicados</h2>
             <p className="sm:text-lg">
-              Anexos nos comunicados, facilitando a comunicação com os clientes,
-              tornando mais eficiente a distribuição de comunicados.
+              Anexos nos comunicados, facilitando a comunicação com os clientes
+              e tornando mais eficiente a distribuição de comunicados.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
-                <strong>Gestão de Clientes</strong> e selecione{" "}
+                <strong>1. Na Navbar:</strong> Navegue até a seção{" "}
+                <strong>Gestão de Clientes</strong> e selecione
                 <strong>Comunicados</strong>.
               </li>
               <li>
                 <strong>2. Na página:</strong> Ao <strong>criar</strong> ou{" "}
-                <strong>editar</strong> algum comunicado, terá uma sessão
-                específica para anexos, basta selecionar os arquivos.
+                <strong>editar</strong> um comunicado, haverá uma seção
+                específica para anexos. Basta selecionar os arquivos.
               </li>
             </ol>
             <Link className="hidden" target="_blank" href={"#"}>
@@ -78,7 +78,7 @@ export default function Home() {
               src={AttachedCommunications}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print Sara Ia"
+              alt="Print do recurso de anexos nos comunicados"
             />
           </div>
         </section>
@@ -92,12 +92,12 @@ export default function Home() {
             <p className="sm:text-lg">
               Agora você pode visualizar a distribuição de clientes, a receita
               recorrente e o ranking dos principais clientes diretamente no G
-              Client
+              Client.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navebar:</strong> Navegue até a seção{" "}
-                <strong>Gestão de clientes</strong> e clique na opção
+                <strong>1. Na Navbar:</strong> Navegue até a seção{" "}
+                <strong>Gestão de Clientes</strong> e clique na opção
                 <strong>Indicadores</strong>.
               </li>
               <li>
@@ -105,9 +105,9 @@ export default function Home() {
                 indicador deseja visualizar.
               </li>
               <li>
-                <strong>3. Novo Indicador:</strong> Você também pode fazer
-                solicitação para novos indicadores clicando na opção{" "}
-                <strong>Solicitação de indicador</strong>.
+                <strong>3. Novo Indicador:</strong> Você também pode fazer uma
+                solicitação para novos indicadores clicando na opção
+                <strong> Solicitação de Indicador</strong>.
               </li>
             </ol>
             <Link className="hidden" target="_blank" href={"#"}>
@@ -119,7 +119,7 @@ export default function Home() {
               src={Indicator}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print do modal de enviar fluxos de entrada para os fluxos livres"
+              alt="Print indicadores"
             />
           </div>
         </section>
@@ -138,17 +138,17 @@ export default function Home() {
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navebar:</strong> Navegue até a sessão
-                <strong>Gestão de clientes</strong>, escolha a opção{" "}
-                <strong>Ações em lote</strong> e{" "}
-                <strong>Alterar responsável do departamento</strong>.
+                <strong>1. Na Navbar:</strong> Navegue até a seção{" "}
+                <strong>Gestão de Clientes</strong>, escolha a opção
+                <strong> Ações em Lote</strong> e
+                <strong> Alterar Responsável do Departamento</strong>.
               </li>
               <li>
                 <strong>2. Alterar responsável:</strong> Selecione o
-                departamento e o responsável que deseja atribuir e clique em{" "}
-                <strong>Visualizar alterações</strong>. Isso permitirá que você
-                veja como ficará a mudança. Para confirmar, clique no botão{" "}
-                <strong>Confirmar alterações</strong>, localizado no final da
+                departamento e o responsável que deseja atribuir e clique em
+                <strong> Visualizar Alterações</strong>. Isso permitirá que você
+                veja como ficará a mudança. Para confirmar, clique no botão
+                <strong> Confirmar Alterações</strong>, localizado no final da
                 tabela.
               </li>
             </ol>
@@ -161,7 +161,7 @@ export default function Home() {
               src={DepartmentResponsible}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print dos checklist nos fluxos de trabalho"
+              alt="Print das ações em lote."
             />
           </div>
         </section>
@@ -172,7 +172,7 @@ export default function Home() {
               Adicionado
             </span>
             <h2 className="sm:text-3xl text-2xl">
-              Relatório saída de clientes por competência
+              Relatório de Saída de Clientes por Competência
             </h2>
             <p className="sm:text-lg">
               Agora você pode visualizar um relatório de saída de clientes por
@@ -180,10 +180,9 @@ export default function Home() {
             </p>
             <ol className="space-y-6 pb-8">
               <li>
-                <strong>1. Na Navbar:</strong> Navegue atté a sessão{" "}
+                <strong>1. Na Navbar:</strong> Navegue até a seção{" "}
                 <strong>
-                  {" "}
-                  Relatório &gt; Saída de Clientes por Competência
+                  Relatórios &gt; Saída de Clientes por Competência
                 </strong>
                 .
               </li>
@@ -202,7 +201,7 @@ export default function Home() {
               src={ReportByCompetency}
               quality={100}
               className="rounded-2xl lg:w-[400px] min-w-[260px] h-full transition-all duration-300 hover:scale-110 border border-slate-200 shadow-lg dark:border-none"
-              alt="print dos checklist nos fluxos de trabalho"
+              alt="Print do relatório de saída de clientes por competência"
             />
           </div>
         </section>
