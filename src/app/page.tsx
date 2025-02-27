@@ -90,9 +90,8 @@ export default function Home() {
             </span>
             <h2 className="sm:text-3xl text-2xl">Indicadores</h2>
             <p className="sm:text-lg">
-              Agora você pode visualizar a distribuição de clientes, a receita
-              recorrente e o ranking dos principais clientes diretamente no G
-              Client.
+              Agora você pode visualizar a distribuição de clientes e ranking
+              dos principais clientes diretamente no G Client.
             </p>
             <ol className="space-y-6 pb-8">
               <li>
