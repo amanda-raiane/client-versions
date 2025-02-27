@@ -14,6 +14,7 @@ import imageSign from "@/app/images/versions/1_20_0/sign.png";
 import darkMode from "@/app/images/versions/1_21_0/dark-mode.png";
 import SaraIa from "@/app/images/versions/1_22_0/sara-ia.png";
 import Communication from "@/app/images/versions/1_23_0/communication.png";
+import IaProblema from "@/app/images/versions/1_24_0/problem-ai.png";
 
 export function SessionOtherResources() {
   return (
@@ -22,10 +23,18 @@ export function SessionOtherResources() {
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
           <OtherVersion
+            link="/versao-1-24-0"
+            date="13 de janeiro de 2025"
+            imageUrl={IaProblema}
+            version="v1.24.0"
+            title="IA Sara no relatório de problemas."
+          />
+
+          <OtherVersion
             link="/versao-1-23-0"
             date="3 de janeiro de 2025"
             imageUrl={Communication}
-            version="v1.22.0"
+            version="v1.23.0"
             title="Comunicados em massa via email."
           />
 
