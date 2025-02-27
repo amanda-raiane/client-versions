@@ -217,7 +217,7 @@ export default function Home() {
               <ul className="flex flex-col gap-2">
                 <li>Clientes fazendo aniversário de parceria</li>
                 <li>Prevenir perda do playbook</li>
-                <li>Alterado classificação do NPS</li>
+                <li>Campo de busca de clientes nos comunicados</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -225,7 +225,7 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Campo de busca de clientes nos comunicados</li>
+                <li>Alterado classificação do NPS</li>
                 <li>Exibir honorário no relatório de saída</li>
                 <li>Exibir conteúdo do comunicado</li>
                 <li>Ajustes no layout do modal no NPS</li>
