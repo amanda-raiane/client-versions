@@ -59,7 +59,7 @@ export function SessionOtherResources() {
             date="4 de novembro de 2024"
             imageUrl={imageSign}
             version="v1.20.1"
-            title="Envie contratos para sem clientes diretamente do G Client."
+            title="Envie contratos para seus clientes diretamente do G Client."
           />
 
           <OtherVersion

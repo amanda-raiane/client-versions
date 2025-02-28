@@ -19,7 +19,7 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Envie contratos para sem clientes diretamente do G Client.",
+    "Envie contratos para seus clientes diretamente do G Client.",
   ];
   return (
     <>
