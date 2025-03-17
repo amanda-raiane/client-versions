@@ -14,8 +14,8 @@ import imageSavedPDF from "@/app/images/versions/1_19_0/saved-pdf.png";
 
 export default function Home() {
   const description = [
-    "Crie quadros kanban personalizados para o seu fluxo de trabalho. ",
-    "Salvar playbooks em PDF",
+    "Crie quadros kanban personalizados para o seu fluxo de trabalho",
+    "Salvar playbooks em PDF.",
   ];
   return (
     <>

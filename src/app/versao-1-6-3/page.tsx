@@ -16,7 +16,7 @@ import { Export, PaperPlaneTilt } from "@phosphor-icons/react/dist/ssr";
 
 export default function Page() {
   const description = [
-    "Faça o disparo de novos clientes que finalizaram o processo de entrada para operação. ",
+    "Faça o disparo de novos clientes que finalizaram o processo de entrada para operação",
     "Exporte e compartilhe os dados com quem você quiser.",
   ];
   return (

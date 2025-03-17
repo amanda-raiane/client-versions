@@ -13,7 +13,7 @@ import imageProcess from "@/app/images/versions/1_7_4/processos.png";
 
 export default function Page() {
   const description = [
-    "Aprimore a gestão dos processos de entrada de clientes. ",
+    "Aprimore a gestão dos processos de entrada de clientes",
     "Cadastre novos clientes com mais eficiência.",
   ];
   return (

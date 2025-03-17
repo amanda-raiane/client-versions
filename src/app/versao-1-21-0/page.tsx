@@ -21,9 +21,9 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Exporte relatórios de tarefas no fluxos de trabalho, ",
-    "Melhoria no NPS, ",
-    "Altere entre o light e dark mode ",
+    "Exporte relatórios de tarefas no fluxos de trabalho",
+    "Melhoria no NPS",
+    "Altere entre o light e dark mode.",
   ];
   return (
     <>

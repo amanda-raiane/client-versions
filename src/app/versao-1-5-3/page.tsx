@@ -12,7 +12,7 @@ import imageDocs from "@/app/images/versions/1_5_3/documentos.png";
 
 export default function Page() {
   const description = [
-    "Personalize os status dos processos de maneira eficaz. ",
+    "Personalize os status dos processos de maneira eficaz",
     "Crie documentos e compartilhe com a sua equipe.",
   ];
   return (

@@ -23,9 +23,9 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Anexos nos comunicados, ",
-    "Indicadores: distribuição de clientes | receita recorrente | ranking de clientes, ",
-    "Ações em lote: alterar responsável do departamento, ",
+    "Anexos nos comunicados",
+    "Indicadores: distribuição de clientes | receita recorrente | ranking de clientes",
+    "Ações em lote: alterar responsável do departamento",
     "Relatório saída de clientes por competência",
   ];
   return (

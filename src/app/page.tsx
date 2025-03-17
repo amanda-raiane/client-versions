@@ -59,9 +59,7 @@ export default function Home() {
   return (
     <>
       <main className="text-slate-900 dark:bg-slate-950 dark:text-slate-50 min-h-screen bg-slate-50 p-1">
-        <PageHeader
-          description={updates.map((update) => update.title).join(", ")}
-        />
+        <PageHeader description={updates.map((update) => update.title)} />
 
         <header className="2xl:px-64 px-5 flex md:justify-between items-center flex-col-reverse sm:flex-row mt-6">
           <div>

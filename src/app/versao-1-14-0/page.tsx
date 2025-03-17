@@ -16,7 +16,7 @@ import { Check, PlusCircle } from "@phosphor-icons/react/dist/ssr";
 
 export default function Home() {
   const description = [
-    "Otimize a criação de ocorrências, problemas e acessos dos seus clientes.",
+    "Otimize a criação de ocorrências, problemas e acessos dos seus clientes",
     "Esteja no controle do que fazer em cada processo com os checklists personalizados.",
   ];
   return (

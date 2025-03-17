@@ -25,10 +25,10 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Análise de relatório de clientes com IA, ",
-    "Configurar a tarefa do fluxo de entrada para o fluxo de trabalho, ",
-    "Armazenamento de checklist padrão para o fluxo de trabalho,  ",
-    "Visualização de colunas no relatório geral de clientes, ",
+    "Análise de relatório de clientes com IA",
+    "Configurar a tarefa do fluxo de entrada para o fluxo de trabalho",
+    "Armazenamento de checklist padrão para o fluxo de trabalho",
+    "Visualização de colunas no relatório geral de clientes",
     "Email personalizado para solicitação de assinatura.",
   ];
   return (
