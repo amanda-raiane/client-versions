@@ -30,12 +30,12 @@ const updates = [
     status: "Adicionado",
   },
   {
-    title: "Sessão de encantamento de clientes",
+    title: "Seção de encantamento de clientes",
     description:
       "Acompanhe o nível de encantamento do seu cliente com o seu serviço.",
     steps: [
       "Na Navbar: Navegue até a seção Gestão de Clientes e clique na opção Clientes e selecione o cliente desejado.",
-      "Na página: Navegue até a sessão Encantamento para visualizar pesquisas pós onboarding, histórico NPS e Health Score.",
+      "Na página: Navegue até a seção Encantamento para visualizar pesquisas pós onboarding, histórico NPS e Health Score.",
     ],
     image: EnchantmentSession,
     status: "Adicionado",
