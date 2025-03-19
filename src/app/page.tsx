@@ -13,7 +13,7 @@ import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 import PosOnboarding from "@/app/images/versions/1_26_0/pos-onboarding.png";
 import EnchantmentSession from "@/app/images/versions/1_26_0/enchantment-session.png";
-import ReportByCompetency from "@/app/images/versions/1_25_0/report-by-competency.png";
+import ImprovingAutomations from "@/app/images/versions/1_26_0/improving-automations.png";
 import { ThemeChanger } from "./components/ThemeChanger.tsx";
 
 const updates = [
@@ -22,7 +22,7 @@ const updates = [
     description:
       "Agora você pode enviar uma dentro do G Client, para medir a satisfação do seu novo cliente com relação ao onboarding.",
     steps: [
-      "Na Navbar: Navegue até a seção Gestão de Clientes e clique na opção Pesquisa e selecione Pesquisa pós onboarding.",
+      "Na Navbar: Navegue até a seção Gestão de Clientes e clique na opção Encantamento e selecione Pesquisa pós onboarding.",
       "Na página: Clique no botão Enviar pesquisa, adicione o email, identificação e selecione o cliente. Depois, basta clicar em enviar.",
       "Seu cliente não recebeu?: Você também pode pegar o link da pesquisa e enviar diretamente para seu cliente.",
     ],
@@ -46,9 +46,9 @@ const updates = [
       "Agora você pode alterar o status do cliente diretamente nas automações e optar por compartilhar ou não detalhes, comentários e anexos.",
     steps: [
       "Na Navbar: Navegue até Gestão de Processos, clique em cadastros e selecione automações.",
-      "Na página: Visualize clientes que saíram por competência e exporte os dados em planilha ou PDF.",
+      "Na página: Clique em criar automações, depois disso basta seguir o fluxo normal, quando chegar na terceira etapa, você podera selecionar parar qual status você deseja enviar seu cliente, além disso você também pode selecionar quais as informações você deseja trazer para as proximas fases, decrição, comentários e anexos.",
     ],
-    image: ReportByCompetency,
+    image: ImprovingAutomations,
     status: "Modificado",
   },
 ];
