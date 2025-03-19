@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Page() {
   const description = [
-    "Adicionado tela para salvar informações dos sócios de cada empresa.",
+    "Adicionado tela para salvar informações dos sócios de cada empresa",
     " Fique por dentro de todas as atualizações, o G Client agora conta com notificações.",
   ];
   return (

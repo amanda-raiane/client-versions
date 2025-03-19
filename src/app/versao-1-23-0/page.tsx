@@ -22,8 +22,8 @@ export default function Home() {
   const { theme } = useTheme();
 
   const description = [
-    "Campo de busca nos contratos, ",
-    "Comunicados em massa via email, ",
+    "Campo de busca nos contratos",
+    "Comunicados em massa via email",
     "Análise com IA no relatório de saída de clientes.",
   ];
   return (
