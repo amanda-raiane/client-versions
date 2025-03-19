@@ -46,7 +46,7 @@ const updates = [
       "Agora você pode alterar o status do cliente diretamente nas automações e optar por compartilhar ou não detalhes, comentários e anexos.",
     steps: [
       "Na Navbar: Navegue até Gestão de Processos, clique em cadastros e selecione automações.",
-      "Na página: Clique em criar automações, depois disso basta seguir o fluxo normal, quando chegar na terceira etapa, você podera selecionar parar qual status você deseja enviar seu cliente, além disso você também pode selecionar quais as informações você deseja trazer para as proximas fases, decrição, comentários e anexos.",
+      "Na página: Clique em Criar Automações e siga o fluxo normalmente. Na terceira etapa, você poderá selecionar para qual status deseja enviar seu cliente. Além disso, também poderá escolher quais informações deseja levar para as próximas fases, como descrição, comentários e anexos.",
     ],
     image: ImprovingAutomations,
     status: "Modificado",
