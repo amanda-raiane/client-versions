@@ -2,65 +2,54 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Footer } from "./components/Footer";
+import { Footer } from "../components/Footer";
 
-import { PrimaryButton } from "./components/PrimaryButton";
-import { SessionOtherResources } from "./components/SessionOtherResources";
-import PageHeader from "./components/PageHeader";
+import { PrimaryButton } from "../components/PrimaryButton";
+import { SessionOtherResources } from "../components/SessionOtherResources";
+import PageHeader from "../components/PageHeader";
 import { useTheme } from "next-themes";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import MyClients from "@/app/images/versions/1_27_0/my-clients.png";
-import MetricsEmail from "@/app/images/versions/1_27_0/metrics-email.png";
-import PostOnboardingPage from "@/app/images/versions/1_27_0/post-onboading-page.png";
-import ClientBlocked from "@/app/images/versions/1_27_0/client-blocked.png";
-import { ThemeChanger } from "./components/ThemeChanger.tsx";
+import PosOnboarding from "@/app/images/versions/1_26_0/pos-onboarding.png";
+import EnchantmentSession from "@/app/images/versions/1_26_0/enchantment-session.png";
+import ImprovingAutomations from "@/app/images/versions/1_26_0/improving-automations.png";
+import { ThemeChanger } from "../components/ThemeChanger.tsx";
 
 const updates = [
   {
-    title: "Dashboard Meus Clientes",
+    title: "Pesquisa de satisfação pós Onboarding",
     description:
-      "Agora você pode acompanhar apenas os clientes que foram atribuídos a você.",
+      "Agora você pode enviar uma dentro do G Client, para medir a satisfação do seu novo cliente com relação ao onboarding.",
     steps: [
-      "Na Navbar: Abaixo do botão Home, clique no botão Meus Clientes.",
-      "Na página: Você pode visualizar os clientes atribuídos a você, tanto no formato de dashboard quanto em lista. Além disso, é possível visualizar as ocorrências e problemas dos seus clientes.",
+      "Na Navbar: Navegue até a seção Gestão de Clientes e clique na opção Encantamento e selecione Pesquisa pós onboarding.",
+      "Na página: Clique no botão Enviar pesquisa, adicione o email, identificação e selecione o cliente. Depois, basta clicar em enviar.",
+      "Seu cliente não recebeu?: Você também pode pegar o link da pesquisa e enviar diretamente para seu cliente.",
     ],
-    image: MyClients,
+    image: PosOnboarding,
     status: "Adicionado",
-    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/my-clients",
   },
   {
-    title: "Resumo mensal dos clientes por e-mail para administradores",
-    description: "Acompanhe os resumos mensais da sua empresa por e-mail.",
+    title: "Seção de encantamento de clientes",
+    description:
+      "Acompanhe o nível de encantamento do seu cliente com o seu serviço.",
     steps: [
-      "Agora, todo dia 2 do mês, os usuários administradores receberão um e-mail com as principais métricas do seu negócio.",
+      "Na Navbar: Navegue até a seção Gestão de Clientes e clique na opção Clientes e selecione o cliente desejado.",
+      "Na página: Navegue até a seção Encantamento para visualizar pesquisas pós onboarding, histórico NPS e Health Score.",
     ],
-    image: MetricsEmail,
+    image: EnchantmentSession,
     status: "Adicionado",
-    link: "#",
   },
   {
-    title: "Página de indicador de satisfação pós-onboarding",
+    title: "Automações aprimoradas",
     description:
-      "Página dedicada à exibição dos dados coletados na sua pesquisa pós-onboarding.",
+      "Agora você pode alterar o status do cliente diretamente nas automações e optar por compartilhar ou não detalhes, comentários e anexos.",
     steps: [
-      "Na Navbar: Navegue até Gestão de Clientes, clique em Indicadores e selecione Pesquisa pós-onboarding.",
-      "Na página: Você poderá ver os clientes que já responderam à pesquisa, com os dados coletados.",
-      "Filtros: É possível filtrar por data de resposta e por classificação.",
+      "Na Navbar: Navegue até Gestão de Processos, clique em cadastros e selecione automações.",
+      "Na página: Clique em Criar Automações e siga o fluxo normalmente. Na terceira etapa, você poderá selecionar para qual status deseja enviar seu cliente. Além disso, também poderá escolher quais informações deseja levar para as próximas fases, como descrição, comentários e anexos.",
     ],
-    image: PostOnboardingPage,
-    status: "Adicionado",
-    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/customer-management/indicator/post-onboarding-feedback",
-  },
-  {
-    title: "Notificação por e-mail aos responsáveis quando cliente é bloqueado",
-    description:
-      "Ao adicionar a tag 'Bloqueado', os responsáveis pelo cliente serão notificados por e-mail.",
-    steps: [],
-    image: ClientBlocked,
-    status: "Adicionado",
-    link: "#",
+    image: ImprovingAutomations,
+    status: "Modificado",
   },
 ];
 
@@ -80,13 +69,13 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              9 de abril de 2025 <span>v1.27.0</span>
+              17 de março de 2025 <span>v1.26.0</span>
             </p>
           </div>
           <ThemeChanger />
         </header>
 
-        {updates.map(({ title, description, steps, image, status, link }) => (
+        {updates.map(({ title, description, steps, image, status }) => (
           <section
             key={title}
             className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row"
@@ -109,11 +98,7 @@ export default function Home() {
                   </li>
                 ))}
               </ol>
-              <Link
-                className={`${link === "#" ? "hidden" : ""} `}
-                target="_blank"
-                href={link}
-              >
+              <Link className="hidden" target="_blank" href="#">
                 <PrimaryButton text="Ver tutorial" />
               </Link>
             </div>
@@ -136,8 +121,9 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
+                <li>Novos filtros adicionados nos processos</li>
                 <li>
-                  Filtro no relatório de saída de clientes por tipo de saída
+                  Adicionar código do domínio no relatório de responsáveis
                 </li>
               </ul>
             </div>
@@ -146,12 +132,7 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Data de vencimento obrigatória nos processos</li>
-                <li>Soma dos honorários nos grupos de clientes</li>
-                <li>
-                  Atualizar automaticamente título da tarefa de acordo com a
-                  razão social do cliente
-                </li>
+                <li>Dashboard do societário com novo layout</li>
               </ul>
             </div>
           </div>
