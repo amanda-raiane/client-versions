@@ -11,56 +11,36 @@ import { useTheme } from "next-themes";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import MyClients from "@/app/images/versions/1_27_0/my-clients.png";
-import MetricsEmail from "@/app/images/versions/1_27_0/metrics-email.png";
-import PostOnboardingPage from "@/app/images/versions/1_27_0/post-onboading-page.png";
-import ClientBlocked from "@/app/images/versions/1_27_0/client-blocked.png";
+import IntegrationGcVendas from "@/app/images/versions/1_28_0/integration-gc-vendas.png";
+import ProcessType from "@/app/images/versions/1_28_0/process-type.png";
 import { ThemeChanger } from "./components/ThemeChanger.tsx";
 
 const updates = [
   {
-    title: "Dashboard Meus Clientes",
+    title: "Integração com o gc vendas",
     description:
-      "Agora você pode acompanhar apenas os clientes que foram atribuídos a você.",
+      "Agora quando quando dado como ganho o cliente, ele passa para os processo dentro do G Client.",
     steps: [
-      "Na Navbar: Abaixo do botão Home, clique no botão Meus Clientes.",
-      "Na página: Você pode visualizar os clientes atribuídos a você, tanto no formato de dashboard quanto em lista. Além disso, é possível visualizar as ocorrências e problemas dos seus clientes.",
+      "Acesse o painel do G Client: Faça login como administrador e vá em Configurações > Integrações > Integração GC Vendas.",
+      "Gere a chave de integração: Clique em Gerar chave na página de integração.",
+      "Copie a chave gerada: A chave será exibida no formato gck_xxxxxxxxxxxxxxxxxxxxxxxx.",
+      "Vincule a chave no GC Vendas: Cole a chave na aba Vincular chave e clique em Vincular chave. Aguarde a confirmação da integração.",
     ],
-    image: MyClients,
+    image: IntegrationGcVendas,
     status: "Adicionado",
-    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/my-clients",
+    link: "https://ajuda.gclient.com.br/docs/tutoriais-video/integracoes/gc-vendas",
   },
   {
-    title: "Resumo mensal dos clientes por e-mail para administradores",
-    description: "Acompanhe os resumos mensais da sua empresa por e-mail.",
-    steps: [
-      "Agora, todo dia 2 do mês, os usuários administradores receberão um e-mail com as principais métricas do seu negócio.",
-    ],
-    image: MetricsEmail,
-    status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Página de indicador de satisfação pós-onboarding",
+    title: "Tipo de processos",
     description:
-      "Página dedicada à exibição dos dados coletados na sua pesquisa pós-onboarding.",
+      "Você pode deixar o G Client com a sua cara, personalizando os tipos de processos.",
     steps: [
-      "Na Navbar: Navegue até Gestão de Clientes, clique em Indicadores e selecione Pesquisa pós-onboarding.",
-      "Na página: Você poderá ver os clientes que já responderam à pesquisa, com os dados coletados.",
-      "Filtros: É possível filtrar por data de resposta e por classificação.",
+      "Acesse a página de cadastro de Tipos de Processos: faça login e navegue até a seção **Gestão de Processos > Cadastros > Tipos de Processos**.",
+      "Clique em **Novo Processo** para adicionar um novo tipo. Preencha as seguintes informações: **Título** (nome do processo) e **Processos Permitidos** (Onboarding, Societário, Adoção e Offboarding).",
     ],
-    image: PostOnboardingPage,
+    image: ProcessType,
     status: "Adicionado",
-    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/customer-management/indicator/post-onboarding-feedback",
-  },
-  {
-    title: "Notificação por e-mail aos responsáveis quando cliente é bloqueado",
-    description:
-      "Ao adicionar a tag 'Bloqueado', os responsáveis pelo cliente serão notificados por e-mail.",
-    steps: [],
-    image: ClientBlocked,
-    status: "Adicionado",
-    link: "#",
+    link: "https://ajuda.gclient.com.br/docs/tutoriais-video/gestao-processos/criação-tipos-de-processos",
   },
 ];
 
@@ -80,7 +60,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              9 de abril de 2025 <span>v1.27.0</span>
+              25 de abril de 2025 <span>v1.28.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -89,7 +69,7 @@ export default function Home() {
         {updates.map(({ title, description, steps, image, status, link }) => (
           <section
             key={title}
-            className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col lg:flex-row"
+            className="2xl:px-64 px-5 mt-20 lg:mb-36 mb-24 flex md:justify-center md:gap-20 gap-10 flex-col items-center lg:flex-row"
           >
             <div className="dark:text-slate-50 text-slate-900 space-y-3 lg:w-1/2">
               <span
@@ -136,9 +116,7 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>
-                  Filtro no relatório de saída de clientes por tipo de saída
-                </li>
+                <li>Limitar quem pode editar informações financeiras</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -146,11 +124,8 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Data de vencimento obrigatória nos processos</li>
-                <li>Soma dos honorários nos grupos de clientes</li>
                 <li>
-                  Atualizar automaticamente título da tarefa de acordo com a
-                  razão social do cliente
+                  Código da Domínio, poder cadastrar texto e trocar nomenclatura
                 </li>
               </ul>
             </div>
