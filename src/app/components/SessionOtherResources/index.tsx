@@ -17,6 +17,7 @@ import Communication from "@/app/images/versions/1_23_0/communication.png";
 import IaProblema from "@/app/images/versions/1_24_0/problem-ai.png";
 import Indicator from "@/app/images/versions/1_25_0/indicator.png";
 import ImprovedAutomations from "@/app/images/versions/1_26_0/improving-automations.png";
+import MyClients from "@/app/images/versions/1_27_0/my-clients.png";
 
 export function SessionOtherResources() {
   return (
@@ -25,8 +26,16 @@ export function SessionOtherResources() {
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
           <OtherVersion
-            link="/versao-1-26-0"
+            link="/versao-1-27-0"
             date="17 de março de 2025"
+            imageUrl={MyClients}
+            version="v1.27.0"
+            title="Página de Meus Clientes"
+          />
+
+          <OtherVersion
+            link="/versao-1-26-0"
+            date="9 de abril de 2025"
             imageUrl={ImprovedAutomations}
             version="v1.26.0"
             title="Indicadores"
