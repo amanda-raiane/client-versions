@@ -18,6 +18,7 @@ import IaProblema from "@/app/images/versions/1_24_0/problem-ai.png";
 import Indicator from "@/app/images/versions/1_25_0/indicator.png";
 import ImprovedAutomations from "@/app/images/versions/1_26_0/improving-automations.png";
 import MyClients from "@/app/images/versions/1_27_0/my-clients.png";
+import IntegrationGcVendas from "@/app/images/versions/1_28_0/integration-gc-vendas.png";
 
 export function SessionOtherResources() {
   return (
@@ -25,6 +26,14 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-1-28-0"
+            date="25 de abril de 2025"
+            imageUrl={IntegrationGcVendas}
+            version="v1.28.0"
+            title="Integração com GC Vendas"
+          />
+
           <OtherVersion
             link="/versao-1-27-0"
             date="17 de março de 2025"

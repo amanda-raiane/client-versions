@@ -2,32 +2,45 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-
 import { Footer } from "@/app/components/Footer";
+
 import { PrimaryButton } from "@/app/components/PrimaryButton";
 import { SessionOtherResources } from "@/app/components/SessionOtherResources";
 import PageHeader from "@/app/components/PageHeader";
-import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
+import { useTheme } from "next-themes";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import SendToProcesses from "@/app/images/versions/1_29_0/send-to-processes.png";
+import IntegrationGcVendas from "@/app/images/versions/1_28_0/integration-gc-vendas.png";
+import ProcessType from "@/app/images/versions/1_28_0/process-type.png";
+import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
 const updates = [
   {
-    title: "Envie tarefas do fluxo de trabalho para os fluxos padrão",
+    title: "Integração com o gc vendas",
     description:
-      "Agora é possível mover tarefas do seu fluxo de trabalho diretamente para os fluxos padrão do sistema, facilitando a organização e o acompanhamento dos processos.",
+      "Agora quando quando dado como ganho o cliente, ele passa para os processo dentro do G Client.",
     steps: [
-      "Acesse a página de **Quadros** e selecione o quadro desejado.",
-      "Clique na tarefa que deseja mover para o fluxo padrão.",
-      "Clique no ícone ao lado do nome da tarefa para abrir o formulário.",
-      "Preencha as informações necessárias e clique em **Enviar para processos**.",
+      "Acesse o painel do G Client: Faça login como administrador e vá em Configurações > Integrações > Integração GC Vendas.",
+      "Gere a chave de integração: Clique em Gerar chave na página de integração.",
+      "Copie a chave gerada: A chave será exibida no formato gck_xxxxxxxxxxxxxxxxxxxxxxxx.",
+      "Vincule a chave no GC Vendas: Cole a chave na aba Vincular chave e clique em Vincular chave. Aguarde a confirmação da integração.",
     ],
-    image: SendToProcesses,
+    image: IntegrationGcVendas,
     status: "Adicionado",
-    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/free-flows/send-to-processes",
+    link: "https://ajuda.gclient.com.br/docs/tutoriais-video/integracoes/gc-vendas",
+  },
+  {
+    title: "Tipo de processos",
+    description:
+      "Você pode deixar o G Client com a sua cara, personalizando os tipos de processos.",
+    steps: [
+      "Acesse a página de cadastro de Tipos de Processos: faça login e navegue até a seção **Gestão de Processos > Cadastros > Tipos de Processos**.",
+      "Clique em **Novo Processo** para adicionar um novo tipo. Preencha as seguintes informações: **Título** (nome do processo) e **Processos Permitidos** (Onboarding, Societário, Adoção e Offboarding).",
+    ],
+    image: ProcessType,
+    status: "Adicionado",
+    link: "https://ajuda.gclient.com.br/docs/tutoriais-video/gestao-processos/criação-tipos-de-processos",
   },
 ];
 
@@ -47,7 +60,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              12 de maio de 2025 <span>v1.29.0</span>
+              25 de abril de 2025 <span>v1.29.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -103,7 +116,7 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Filtro por responsável ações em lote: responsável</li>
+                <li>Limitar quem pode editar informações financeiras</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -111,12 +124,8 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Melhorias grupos de empresa</li>
                 <li>
-                  Melhorias no modal de atualizar a data de entrada do cliente
-                </li>
-                <li>
-                  Permitir data de inativação futura no cadastro do cliente
+                  Código da Domínio, poder cadastrar texto e trocar nomenclatura
                 </li>
               </ul>
             </div>
