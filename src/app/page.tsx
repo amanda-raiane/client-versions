@@ -20,10 +20,10 @@ const updates = [
     description:
       "Agora é possível mover tarefas do seu fluxo de trabalho diretamente para os fluxos padrão do sistema, facilitando a organização e o acompanhamento dos processos.",
     steps: [
-      "Acesse a página de **Quadros** e selecione o quadro desejado.",
+      "Acesse a página de Quadros e selecione o quadro desejado.",
       "Clique na tarefa que deseja mover para o fluxo padrão.",
       "Clique no ícone ao lado do nome da tarefa para abrir o formulário.",
-      "Preencha as informações necessárias e clique em **Enviar para processos**.",
+      "Preencha as informações necessárias e clique em Enviar para processos.",
     ],
     image: SendToProcesses,
     status: "Adicionado",
