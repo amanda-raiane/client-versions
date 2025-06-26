@@ -12,68 +12,22 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import Forms from "@/app/images/versions/2_0_0/forms.png";
-import LicenseControl from "@/app/images/versions/2_0_0/license-control.png";
-import PartnersNps from "@/app/images/versions/2_0_0/partners-nps.png";
-import NewClientPage from "@/app/images/versions/2_0_0/new-client-page.png";
-import ForgetPassword from "@/app/images/versions/2_0_0/forget-password.png";
+import SendToProcesses from "@/app/images/versions/1_29_0/send-to-processes.png";
 
 const updates = [
   {
-    title: "Formulários personalizados para captação de dados e documentos",
+    title: "Envie tarefas do fluxo de trabalho para os fluxos padrão",
     description:
-      "Agora você pode coletar informações e documentos diretamente pelo G Client, sem depender de ferramentas externas.",
+      "Agora é possível mover tarefas do seu fluxo de trabalho diretamente para os fluxos padrão do sistema, facilitando a organização e o acompanhamento dos processos.",
     steps: [
-      "Configure o formulário com os campos que desejar — texto, anexos, seleções e mais.",
-      "Depois de configurado, vincule o formulário durante a criação ou edição dos processos (onboarding, societário, adoção e offboarding).",
-      "Para compartilhar, clique no card do processo e use o botão de copiar link ao lado do botão de editar. Basta enviá-lo ao seu cliente.",
+      "Acesse a página de Quadros e selecione o quadro desejado.",
+      "Clique na tarefa que deseja mover para o fluxo padrão.",
+      "Clique no ícone ao lado do nome da tarefa para abrir o formulário.",
+      "Preencha as informações necessárias e clique em Enviar para processos.",
     ],
-    image: Forms,
+    image: SendToProcesses,
     status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Controle de vencimento de licenças",
-    description:
-      "Evite prejuízos com licenças expiradas. Agora é possível acompanhar os vencimentos dentro do G Client.",
-    steps: [
-      "No menu lateral, acesse a seção Societário e clique em **Controle de Licenças**.",
-      "Clique no botão no canto superior direito para adicionar uma nova licença: selecione o cliente, o tipo de licença e a data de vencimento.",
-      "Com 30 dias de antecedência do vencimento, você será notificado automaticamente.",
-    ],
-    image: LicenseControl,
-    status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Envio da pesquisa NPS para múltiplos e-mails",
-    description:
-      "Agora a pesquisa NPS é enviada automaticamente também para os sócios cadastrados no G Client.",
-    steps: [
-      "O processo de envio continua o mesmo. A única diferença é que os sócios cadastrados também receberão a pesquisa.",
-    ],
-    image: PartnersNps,
-    status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Novo layout da página do cliente",
-    description: "Página com visual mais limpo, moderno e organizado.",
-    steps: ["Layout redesenhado para proporcionar mais clareza e praticidade."],
-    image: NewClientPage,
-    status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Melhorias no fluxo de login e recuperação de senha",
-    description:
-      "Facilitamos o acesso ao G Client com melhorias visuais e novas funcionalidades.",
-    steps: [
-      "Incluímos uma nova página para recuperação de senha e atualizamos o design da área de login.",
-    ],
-    image: ForgetPassword,
-    status: "Adicionado",
-    link: "#",
+    link: "https://ajuda.gclient.com.br/docs/tutoriais-artigo/free-flows/send-to-processes",
   },
 ];
 
@@ -93,7 +47,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              26 de junho de 2025 <span>v2.0.0</span>
+              12 de maio de 2025 <span>v1.29.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -149,11 +103,7 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Inativar usuários</li>
-                <li>Relatório honorário X plano</li>
-                <li>Integração com stripe para assinatura</li>
-                <li>Usuário admin pode alterar o tipo de outros usuários</li>
-                <li>Página de módulos</li>
+                <li>Filtro por responsável ações em lote: responsável</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -161,10 +111,13 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Editar checklist nos fluxos de trabalho</li>
-                <li>Melhorias no menu lateral</li>
-                <li>Ajustes na página de processos de entrada</li>
-                <li>Melhorias na página de informações do usuários</li>
+                <li>Melhorias grupos de empresa</li>
+                <li>
+                  Melhorias no modal de atualizar a data de entrada do cliente
+                </li>
+                <li>
+                  Permitir data de inativação futura no cadastro do cliente
+                </li>
               </ul>
             </div>
           </div>
