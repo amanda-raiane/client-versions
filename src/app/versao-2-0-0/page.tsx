@@ -12,46 +12,66 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import CustomersObservations from "@/app/images/versions/2_1_0/customers-observations.png";
-import ImportLicenses from "@/app/images/versions/2_1_0/import-batch-licenses.png";
-import ListBoardTask from "@/app/images/versions/2_1_0/list-board-tasks.png";
+import Forms from "@/app/images/versions/2_0_0/forms.png";
+import LicenseControl from "@/app/images/versions/2_0_0/license-control.png";
+import PartnersNps from "@/app/images/versions/2_0_0/partners-nps.png";
+import NewClientPage from "@/app/images/versions/2_0_0/new-client-page.png";
+import ForgetPassword from "@/app/images/versions/2_0_0/forget-password.png";
 
 const updates = [
   {
-    title: "Nova sessão de anotações na página do cliente",
+    title: "Formulários personalizados para captação de dados e documentos",
     description:
-      "Adicione observações importantes diretamente no cadastro do cliente. Agora ficou mais fácil registrar expectativas, objetivos e interações para garantir um acompanhamento completo.",
+      "Agora você pode coletar informações e documentos diretamente pelo G Client, sem depender de ferramentas externas.",
     steps: [
-      "Na página de informações do cliente, acesse a nova aba chamada Anotações.",
-      "Clique em + Adicionar anotação para registrar uma nova informação relevante.",
-      "Defina o tipo da anotação (Expectativa, Objetivo, Observação, Reunião, Feedback ou Outros) e o impacto (Positivo, Negativo ou Neutro).",
+      "Configure o formulário com os campos que desejar — texto, anexos, seleções e mais.",
+      "Depois de configurado, vincule o formulário durante a criação ou edição dos processos (onboarding, societário, adoção e offboarding).",
+      "Para compartilhar, clique no card do processo e use o botão de copiar link ao lado do botão de editar. Basta enviá-lo ao seu cliente.",
     ],
-    image: CustomersObservations,
+    image: Forms,
     status: "Adicionado",
     link: "#",
   },
   {
-    title: "Importar licenças em lote via Excel",
+    title: "Controle de vencimento de licenças",
     description:
-      "Para facilitar a gestão dos vencimentos de licenças, agora você pode importar diversas licenças de uma só vez utilizando uma planilha modelo.",
+      "Evite prejuízos com licenças expiradas. Agora é possível acompanhar os vencimentos dentro do G Client.",
     steps: [
-      "No menu lateral, acesse a seção Societário e clique em Controle de Licenças.",
-      "Clique no botão Importar, localizado no canto superior direito.",
-      "Baixe o modelo de planilha, preencha os dados conforme orientado e envie para importar as licenças em lote.",
+      "No menu lateral, acesse a seção Societário e clique em **Controle de Licenças**.",
+      "Clique no botão no canto superior direito para adicionar uma nova licença: selecione o cliente, o tipo de licença e a data de vencimento.",
+      "Com 30 dias de antecedência do vencimento, você será notificado automaticamente.",
     ],
-    image: ImportLicenses,
+    image: LicenseControl,
     status: "Adicionado",
     link: "#",
   },
   {
-    title: "Exportar tarefas dos processos em planilha e PDF",
+    title: "Envio da pesquisa NPS para múltiplos e-mails",
     description:
-      "Agora é possível exportar todas as tarefas dos seus fluxos de trabalho em formato de planilha (.xlsx) ou PDF, facilitando o compartilhamento e o acompanhamento das atividades.",
+      "Agora a pesquisa NPS é enviada automaticamente também para os sócios cadastrados no G Client.",
     steps: [
-      "Na visualização do quadro, alterne para o modo Listagem para ver as tarefas com detalhes como título, cliente, responsável, descrição, fase atual, data de criação, vencimento, tags e status.",
-      "Utilize os botões de exportação para gerar os arquivos nos formatos desejados.",
+      "O processo de envio continua o mesmo. A única diferença é que os sócios cadastrados também receberão a pesquisa.",
     ],
-    image: ListBoardTask,
+    image: PartnersNps,
+    status: "Adicionado",
+    link: "#",
+  },
+  {
+    title: "Novo layout da página do cliente",
+    description: "Página com visual mais limpo, moderno e organizado.",
+    steps: ["Layout redesenhado para proporcionar mais clareza e praticidade."],
+    image: NewClientPage,
+    status: "Adicionado",
+    link: "#",
+  },
+  {
+    title: "Melhorias no fluxo de login e recuperação de senha",
+    description:
+      "Facilitamos o acesso ao G Client com melhorias visuais e novas funcionalidades.",
+    steps: [
+      "Incluímos uma nova página para recuperação de senha e atualizamos o design da área de login.",
+    ],
+    image: ForgetPassword,
     status: "Adicionado",
     link: "#",
   },
@@ -73,7 +93,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              30 de julho de 2025 <span>v2.1.0</span>
+              26 de junho de 2025 <span>v2.0.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -129,8 +149,11 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Novos filtros na página de controle de licenças</li>
-                <li>Histórico de renovação de licenças na página do cliente</li>
+                <li>Inativar usuários</li>
+                <li>Relatório honorário X plano</li>
+                <li>Integração com stripe para assinatura</li>
+                <li>Usuário admin pode alterar o tipo de outros usuários</li>
+                <li>Página de módulos</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -138,7 +161,10 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Registro do usuário que cadastrou a licença</li>
+                <li>Editar checklist nos fluxos de trabalho</li>
+                <li>Melhorias no menu lateral</li>
+                <li>Ajustes na página de processos de entrada</li>
+                <li>Melhorias na página de informações do usuários</li>
               </ul>
             </div>
           </div>
