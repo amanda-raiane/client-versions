@@ -18,7 +18,7 @@ import PdfTaskProcess from "@/app/images/versions/2_2_0/pdf-task-process.png";
 
 const updates = [
   {
-    title: "Nova sessão de anotações na página do cliente",
+    title: "Nova seção de anotações na página do cliente",
     description:
       "Adicione observações importantes diretamente no cadastro do cliente. Agora ficou mais fácil registrar expectativas, objetivos e interações para garantir um acompanhamento completo.",
     steps: [
