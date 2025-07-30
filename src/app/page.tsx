@@ -14,7 +14,7 @@ import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 import CustomersObservations from "@/app/images/versions/2_1_0/customers-observations.png";
 import ImportLicenses from "@/app/images/versions/2_1_0/import-batch-licenses.png";
-import ListBoardTask from "@/app/images/versions/2_1_0/list-board-tasks.png";
+import PdfTaskProcess from "@/app/images/versions/2_1_0/pdf-task-process.png";
 
 const updates = [
   {
@@ -46,12 +46,12 @@ const updates = [
   {
     title: "Exportar tarefas dos processos em planilha e PDF",
     description:
-      "Agora é possível exportar todas as tarefas dos seus fluxos de trabalho em formato de planilha (.xlsx) ou PDF, facilitando o compartilhamento e o acompanhamento das atividades.",
+      "Agora é possível exportar todas as tarefas dos seus processos (onboarding, societário, adoção e offboarding) em formato de planilha (.xlsx) ou PDF, facilitando o compartilhamento e o acompanhamento das atividades.",
     steps: [
-      "Na visualização do quadro, alterne para o modo Listagem para ver as tarefas com detalhes como título, cliente, responsável, descrição, fase atual, data de criação, vencimento, tags e status.",
-      "Utilize os botões de exportação para gerar os arquivos nos formatos desejados.",
+      "Na página dos processos, clique no botão exportar no canto superior direto.",
+      "Nele você poderá exportar a listagem de duas formas: pdf e excel.",
     ],
-    image: ListBoardTask,
+    image: PdfTaskProcess,
     status: "Adicionado",
     link: "#",
   },
@@ -73,7 +73,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              30 de julho de 2025 <span>v2.1.0</span>
+              30 de julho de 2025 <span>v2.2.0</span>
             </p>
           </div>
           <ThemeChanger />
