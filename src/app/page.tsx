@@ -12,9 +12,9 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-import CustomersObservations from "@/app/images/versions/2_1_0/customers-observations.png";
-import ImportLicenses from "@/app/images/versions/2_1_0/import-batch-licenses.png";
-import PdfTaskProcess from "@/app/images/versions/2_1_0/pdf-task-process.png";
+import CustomersObservations from "@/app/images/versions/2_2_0/customers-observations.png";
+import ImportLicenses from "@/app/images/versions/2_2_0/import-batch-licenses.png";
+import PdfTaskProcess from "@/app/images/versions/2_2_0/pdf-task-process.png";
 
 const updates = [
   {
