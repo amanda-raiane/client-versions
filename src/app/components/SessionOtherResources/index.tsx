@@ -22,6 +22,7 @@ import IntegrationGcVendas from "@/app/images/versions/1_28_0/integration-gc-ven
 import SendToProcesses from "@/app/images/versions/1_29_0/send-to-processes.png";
 import LicenseControl from "@/app/images/versions/2_0_0/license-control.png";
 import CustomersObservations from "@/app/images/versions/2_2_0/customers-observations.png";
+import ReferralRaking from "@/app/images/versions/2_3_0/referral-ranking.png";
 
 export function SessionOtherResources() {
   return (
@@ -29,6 +30,14 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+          <OtherVersion
+            link="/versao-2-3-0"
+            date="16 de setembro de 2025"
+            imageUrl={ReferralRaking}
+            version="v2.3.0"
+            title="Gestão de Indicações e Ranking"
+          />
+
           <OtherVersion
             link="/versao-2-2-0"
             date="30 de julho de 2025"
