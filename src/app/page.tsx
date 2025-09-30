@@ -45,8 +45,8 @@ const updates = [
       "No botão de tarefa, selecione a opção tarefa, criar é para criar uma nova tarefa, e visualizar para ir no quadro que a tarefa se encontra.",
     ],
     image: AnnotationTask,
-    status: "Modificado",
-    link: "#",
+    status: "Adicionado",
+    link: "https://gclient.tawk.help/article/como-criar-tarefas-a-partir-de-anota%C3%A7%C3%B5es",
   },
 ];
 
