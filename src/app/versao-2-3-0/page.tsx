@@ -12,41 +12,53 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
-
-import ContaAzulIntegration from "@/app/images/versions/2_4_0/conta-azul-integration.png";
-import SellerDepartment from "@/app/images/versions/2_4_0/seller-department.png";
-import AnnotationTask from "@/app/images/versions/2_4_0/annotation-task.png";
+import ProcessRelayout from "@/app/images/versions/2_3_0/process-relayout.png";
+import CorporateDashboardFilter from "@/app/images/versions/2_3_0/corporate-dashboard-filter.png";
+import InactiveUser from "@/app/images/versions/2_3_0/inactive-user.png";
+import ReferralRaking from "@/app/images/versions/2_3_0/referral-ranking.png";
 
 const updates = [
   {
-    title: "Integração G Client + Conta Azul",
+    title: "Melhoria no layout e experiência do card de tarefas",
     description:
-      "Integração tão aguardada! Agora, ao cadastrar um cliente no G Client, o mesmo é automaticamente criado na Conta Azul, garantindo mais praticidade e sincronização entre as plataformas.",
+      "Reformulamos o layout do card de tarefas para proporcionar uma experiência mais intuitiva e agradável. Agora, as informações estão organizadas de forma clara, facilitando a visualização e o gerenciamento das suas tarefas diárias.",
     steps: [],
-    image: ContaAzulIntegration,
-    status: "Adicionado",
-    link: "#",
-  },
-  {
-    title: "Departamento comercial nas ocorrências",
-    description:
-      "Agora é possível criar e editar ocorrências do departamento comercial, oferecendo mais controle e flexibilidade no gerenciamento das informações.",
-    steps: [],
-    image: SellerDepartment,
+    image: ProcessRelayout,
     status: "Modificado",
     link: "#",
   },
   {
-    title: "Converter anotação em tarefa de fluxo de trabalho",
+    title: "Adicionar filtro por data no dashboard societário",
     description:
-      "Agora é possível criar tarefas nos fluxos de trabalho diretamente a partir de anotações, facilitando a organização e o acompanhamento das atividades.",
-    steps: [
-      "Na página de informações do clientes, selecione as anotações.",
-      "No botão de tarefa, selecione a opção tarefa, criar é para criar uma nova tarefa, e visualizar para ir no quadro que a tarefa se encontra.",
-    ],
-    image: AnnotationTask,
+      "Agora você pode filtrar as tarefas do dashboard societário por datas específicas, permitindo uma melhor organização e priorização das atividades conforme seus prazos.",
+    steps: [],
+    image: CorporateDashboardFilter,
     status: "Adicionado",
-    link: "https://gclient.tawk.help/article/como-criar-tarefas-a-partir-de-anota%C3%A7%C3%B5es",
+    link: "#",
+  },
+  {
+    title: "Permitir que usuários admin inativem outros usuários",
+    description:
+      "Usuários com perfil de administrador agora têm a capacidade de inativar outros usuários diretamente pelo painel de controle, facilitando a gestão da equipe e o controle de acesso ao sistema.",
+    steps: [
+      "Na página de listagem de usuários, clique no ícone de três pontos ao lado do usuário que deseja inativar.",
+      "Selecione a opção 'Inativar' no menu suspenso.",
+    ],
+    image: InactiveUser,
+    status: "Adicionado",
+    link: "#",
+  },
+  {
+    title: "Gestão de Indicações e Ranking",
+    description:
+      "Implementamos um sistema de gestão de indicações e ranking para que você possa acompanhar e incentivar as indicações feitas por seus clientes. Essa funcionalidade ajuda a reconhecer os clientes mais ativos e a fortalecer o relacionamento com eles.",
+    steps: [
+      "Na página dos indicadores, selecione a opção Ranking de Indicação",
+      "Visualize a lista de clientes que fizeram indicações e seu respectivo ranking",
+    ],
+    image: ReferralRaking,
+    status: "Adicionado",
+    link: "#",
   },
 ];
 
@@ -66,7 +78,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              30 de setembro de 2025 <span>v2.4.0</span>
+              16 de setembro de 2025 <span>v2.3.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -122,11 +134,10 @@ export default function Home() {
                 Adicionado
               </p>
               <ul className="flex flex-col gap-2">
+                <li>Filtrar por datas as tarefas do fluxo de trabalho</li>
                 <li>
-                  Template para status de processos, onboarding, societário,
-                  adoção e offboarding
+                  Responder Pesquisa de Satisfação pós onboarding Internamente
                 </li>
-                <li>Templates para checklists dos processos</li>
               </ul>
             </div>
             <div className="md:max-w-[30%]">
@@ -134,7 +145,11 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Atualiza permissões padrões do usuário admin</li>
+                <li>Correção no botão de análise com IA</li>
+                <li>
+                  Não permitir envio de arquivos não suportados nas ocorrências
+                </li>
+                <li>Melhoria no layout do card fechado</li>
               </ul>
             </div>
           </div>
