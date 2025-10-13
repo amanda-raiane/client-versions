@@ -13,45 +13,38 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 
-import TranscriptionWithAI from "@/app/images/versions/2_5_0/transcription-with-ai.png";
-import ReportCNPJByRecive from "@/app/images/versions/2_5_0/reports-cnpj-by-recive.png";
-import GetOficialInfoByCnpj from "@/app/images/versions/2_5_0/get-oficial-info-by-cnpj.png";
+import ContaAzulIntegration from "@/app/images/versions/2_4_0/conta-azul-integration.png";
+import SellerDepartment from "@/app/images/versions/2_4_0/seller-department.png";
+import AnnotationTask from "@/app/images/versions/2_4_0/annotation-task.png";
 
 const updates = [
   {
-    title: "Cadastro de Problemas via Áudio com IA",
+    title: "Integração G Client + Conta Azul",
     description:
-      "Agora é possível cadastrar problemas utilizando mensagens de áudio. A inteligência artificial transcreve o áudio para texto, facilitando o registro e a organização das informações.",
-    steps: [
-      "Na página de informações do cliente, clique em adicionar, ou editar um problema existente.",
-      "Selecione a opção Gravar Audio.",
-    ],
-    image: TranscriptionWithAI,
+      "Integração tão aguardada! Agora, ao cadastrar um cliente no G Client, o mesmo é automaticamente criado na Conta Azul, garantindo mais praticidade e sincronização entre as plataformas.",
+    steps: [],
+    image: ContaAzulIntegration,
     status: "Adicionado",
     link: "#",
   },
   {
-    title: "Gerar relatório com os dados CNPJ em lote",
+    title: "Departamento comercial nas ocorrências",
     description:
-      "É possível gerar relatórios com os dados do CNPJ de vários clientes ao mesmo tempo, otimizando o processo de obtenção dessas informações.",
-    steps: [
-      "No menu lateral, você encontrará a opção Relatórios > Receita Federal.",
-      "Cliquem em Criar novo relatório, selecione os clientes desejados e clique em Gerar relatório.",
-      "Será iniciar a geração do relatório, que pode levar alguns minutos dependendo da quantidade de clientes selecionados.",
-    ],
-    image: ReportCNPJByRecive,
-    status: "Adicionado",
+      "Agora é possível criar e editar ocorrências do departamento comercial, oferecendo mais controle e flexibilidade no gerenciamento das informações.",
+    steps: [],
+    image: SellerDepartment,
+    status: "Modificado",
     link: "#",
   },
   {
-    title:
-      "Preencher automaticamente dados do cliente a partir do CNPJ no cadastro",
+    title: "Converter anotação em tarefa de fluxo de trabalho",
     description:
-      "Ao cadastrar um novo cliente, agora é possível preencher automaticamente os dados básicos utilizando o CNPJ, agilizando o processo de cadastro.",
+      "Agora é possível criar tarefas nos fluxos de trabalho diretamente a partir de anotações, facilitando a organização e o acompanhamento das atividades.",
     steps: [
-      "Na pagina de cadastro de clientes, quando inserido o valor do CNPJ, você pode selecionar em consultar para pode preencher os dados automaticamente.",
+      "Na página de informações do clientes, selecione as anotações.",
+      "No botão de tarefa, selecione a opção tarefa, criar é para criar uma nova tarefa, e visualizar para ir no quadro que a tarefa se encontra.",
     ],
-    image: GetOficialInfoByCnpj,
+    image: AnnotationTask,
     status: "Adicionado",
     link: "https://gclient.tawk.help/article/como-criar-tarefas-a-partir-de-anota%C3%A7%C3%B5es",
   },
@@ -73,7 +66,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              13 de setembro de 2025 <span>v2.5.0</span>
+              30 de setembro de 2025 <span>v2.4.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -125,15 +118,23 @@ export default function Home() {
           </h2>
           <div className="flex md:gap-20 gap-5 flex-col md:flex-row">
             <div className="md:max-w-[30%]">
+              <p className="bg-blue-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
+                Adicionado
+              </p>
+              <ul className="flex flex-col gap-2">
+                <li>
+                  Template para status de processos, onboarding, societário,
+                  adoção e offboarding
+                </li>
+                <li>Templates para checklists dos processos</li>
+              </ul>
+            </div>
+            <div className="md:max-w-[30%]">
               <p className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Link aprimorado da tarefa com a anotação</li>
-                <li>
-                  Não recarregar a página do cliente após problemas e
-                  ocorrências
-                </li>
+                <li>Atualiza permissões padrões do usuário admin</li>
               </ul>
             </div>
           </div>
