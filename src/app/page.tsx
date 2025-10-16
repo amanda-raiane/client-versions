@@ -28,7 +28,7 @@ const updates = [
     ],
     image: TranscriptionWithAI,
     status: "Adicionado",
-    link: "#",
+    link: "https://gclient.tawk.help/article/como-cadastrar-problemas",
   },
   {
     title: "Gerar relatório com os dados CNPJ em lote",
@@ -41,7 +41,7 @@ const updates = [
     ],
     image: ReportCNPJByRecive,
     status: "Adicionado",
-    link: "#",
+    link: "https://gclient.tawk.help/article/gerar-relatorio-com-os-dados-cnpj-em-lote",
   },
   {
     title:
@@ -53,7 +53,7 @@ const updates = [
     ],
     image: GetOficialInfoByCnpj,
     status: "Adicionado",
-    link: "https://gclient.tawk.help/article/como-criar-tarefas-a-partir-de-anota%C3%A7%C3%B5es",
+    link: "#",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              13 de setembro de 2025 <span>v2.5.0</span>
+              16 de setembro de 2025 <span>v2.5.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -131,8 +131,8 @@ export default function Home() {
               <ul className="flex flex-col gap-2">
                 <li>Link aprimorado da tarefa com a anotação</li>
                 <li>
-                  Não recarregar a página do cliente após problemas e
-                  ocorrências
+                  Não recarregar a página do cliente após cadastrar ou editar
+                  problemas e ocorrências
                 </li>
               </ul>
             </div>
