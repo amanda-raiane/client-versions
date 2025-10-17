@@ -73,7 +73,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              16 de setembro de 2025 <span>v2.5.0</span>
+              16 de outubro de 2025 <span>v2.5.0</span>
             </p>
           </div>
           <ThemeChanger />
