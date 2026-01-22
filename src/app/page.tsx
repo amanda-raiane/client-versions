@@ -13,45 +13,43 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 
-import TranscriptionWithAI from "@/app/images/versions/2_5_0/transcription-with-ai.png";
-import ReportCNPJByRecive from "@/app/images/versions/2_5_0/reports-cnpj-by-recive.png";
-import GetOficialInfoByCnpj from "@/app/images/versions/2_5_0/get-oficial-info-by-cnpj.png";
+import TaskClientAutomation from "@/app/images/versions/2_7_0/client-task-automation.png";
+import AutomationPage from "@/app/images/versions/2_7_0/automation-page.png";
+import ChangeStatusBatch from "@/app/images/versions/2_7_0/change-in-batch-status.png";
 
 const updates = [
   {
-    title: "Cadastro de Problemas via Áudio com IA",
+    title: "Criação de Tarefa ao cadastrar cliente",
     description:
-      "Agora é possível cadastrar problemas utilizando mensagens de áudio. A inteligência artificial transcreve o áudio para texto, facilitando o registro e a organização das informações.",
+      "Cria uma tarefa de boas-vindas ou onboarding quando um novo cliente é cadastrado.",
     steps: [
-      "Na página de informações do cliente, clique em adicionar, ou editar um problema existente.",
-      "Selecione a opção Gravar Audio.",
+      "Na página de automações, selecione a opção Tarefa ao cadastrar cliente",
+      "Crie uma automação, nela você poderá realizar o gatilho que vai criar a tarefa, e ação que vai executar",
     ],
-    image: TranscriptionWithAI,
+    image: TaskClientAutomation,
     status: "Adicionado",
-    link: "https://gclient.tawk.help/article/como-cadastrar-problemas",
+    link: "#",
   },
   {
-    title: "Gerar relatório com os dados CNPJ em lote",
+    title: "Pagina centralizadora das Automações",
     description:
-      "É possível gerar relatórios com os dados do CNPJ de vários clientes ao mesmo tempo, otimizando o processo de obtenção dessas informações.",
+      "Uma página centralizada para gerenciar todas as automações do sistema, com um visual clean e organizado.",
     steps: [
-      "No menu lateral, você encontrará a opção Relatórios > Receita Federal.",
-      "Cliquem em Criar novo relatório, selecione os clientes desejados e clique em Gerar relatório.",
-      "Será iniciar a geração do relatório, que pode levar alguns minutos dependendo da quantidade de clientes selecionados.",
     ],
-    image: ReportCNPJByRecive,
+    image: AutomationPage,
     status: "Adicionado",
-    link: "https://gclient.tawk.help/article/gerar-relatorio-com-os-dados-cnpj-em-lote",
+    link: "#",
   },
   {
     title:
-      "Preencher automaticamente dados do cliente a partir do CNPJ no cadastro",
+      "Alterar status do cliente em lote",
     description:
-      "Ao cadastrar um novo cliente, agora é possível preencher automaticamente os dados básicos utilizando o CNPJ, agilizando o processo de cadastro.",
+      "Agora é possível alterar o status de vários clientes de uma só vez, otimizando o processo de gerenciamento e organização dos dados.",
     steps: [
-      "Na pagina de cadastro de clientes, quando inserido o valor do CNPJ, você pode selecionar em consultar para pode preencher os dados automaticamente.",
+      "Na página das Ações em Lote, selecione a opção Alterar status",
+      "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
     ],
-    image: GetOficialInfoByCnpj,
+    image: ChangeStatusBatch,
     status: "Adicionado",
     link: "#",
   },
@@ -73,7 +71,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              16 de outubro de 2025 <span>v2.5.0</span>
+              22 de janeiro de 2026 <span>v2.7.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -129,11 +127,8 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Link aprimorado da tarefa com a anotação</li>
-                <li>
-                  Não recarregar a página do cliente após cadastrar ou editar
-                  problemas e ocorrências
-                </li>
+                <li>Automação de tarefas, agora é possível selecionar responsável para a tarefa e vencimento</li>
+                <li>Filtro dos relatórios de problemas e ocorrências</li>
               </ul>
             </div>
           </div>
