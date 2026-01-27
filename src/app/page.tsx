@@ -16,6 +16,7 @@ import logoLight from "@/app/assets/logo-azul.png";
 import TaskClientAutomation from "@/app/images/versions/2_7_0/client-task-automation.png";
 import AutomationPage from "@/app/images/versions/2_7_0/automation-page.png";
 import ChangeStatusBatch from "@/app/images/versions/2_7_0/change-in-batch-status.png";
+import WorkflowDashboard from "@/app/images/versions/2_7_0/workflow-dashboard.png";
 
 const updates = [
   {
@@ -50,6 +51,19 @@ const updates = [
       "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
     ],
     image: ChangeStatusBatch,
+    status: "Adicionado",
+    link: "#",
+  },
+  {
+    title:
+      "Alterar status do cliente em lote",
+    description:
+      "Agora é possível alterar o status de vários clientes de uma só vez, otimizando o processo de gerenciamento e organização dos dados.",
+    steps: [
+      "Na página das Ações em Lote, selecione a opção Alterar status",
+      "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
+    ],
+    image: WorkflowDashboard,
     status: "Adicionado",
     link: "#",
   },
