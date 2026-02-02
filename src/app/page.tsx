@@ -56,12 +56,15 @@ const updates = [
   },
   {
     title:
-      "Alterar status do cliente em lote",
+      "Painel de Quadros: visão completa e inteligente dos seus fluxos",
     description:
-      "Agora é possível alterar o status de vários clientes de uma só vez, otimizando o processo de gerenciamento e organização dos dados.",
+      "Um dashboard completo e intuitivo para acompanhar todos os seus fluxos de trabalho. Filtre por diretoria, departamento ou responsável, visualize métricas importantes em cartões informativos, acompanhe tarefas atrasadas e analise dados através de gráficos detalhados.",
     steps: [
-      "Na página das Ações em Lote, selecione a opção Alterar status",
-      "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
+      "Na Navbar, navegue até Fluxos de Trabalho e clique em Dashboard",
+      "Use os seletores no topo para filtrar por Diretoria, Departamento ou Responsável",
+      "Visualize os cartões de métricas para ter uma visão rápida dos principais indicadores",
+      "Acompanhe a tabela de tarefas atrasadas para identificar pendências que precisam de atenção",
+      "Explore os gráficos interativos para analisar a distribuição de tarefas por estado, departamento ou responsável"
     ],
     image: WorkflowDashboard,
     status: "Adicionado",
