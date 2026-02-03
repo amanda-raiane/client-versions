@@ -24,6 +24,7 @@ import LicenseControl from "@/app/images/versions/2_0_0/license-control.png";
 import CustomersObservations from "@/app/images/versions/2_2_0/customers-observations.png";
 import ReferralRaking from "@/app/images/versions/2_3_0/referral-ranking.png";
 import ContaAzulIntegration from "@/app/images/versions/2_4_0/conta-azul-integration.png";
+import TranscriptionWithAI from "@/app/images/versions/2_5_0/transcription-with-ai.png";
 
 export function SessionOtherResources() {
   return (
@@ -31,6 +32,14 @@ export function SessionOtherResources() {
       <div className="dark:bg-slate-900 bg-slate-100 md:p-10 p-4 rounded-2xl space-y-10">
         <h2 className="text-3xl text-center">Conheça outros recursos</h2>
         <div className="grid xl:grid-cols-3 gap-10 md:grid-cols-2">
+        <OtherVersion
+            link="/versao-2-5-0"
+            date="16 de outubro de 2025"
+            imageUrl={TranscriptionWithAI}  
+            version="v2.5.0"
+            title="Cadastro de Problemas via Áudio com IA"
+          />
+
           <OtherVersion
             link="/versao-2-4-0"
             date="30 de setembro de 2025"

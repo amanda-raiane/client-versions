@@ -13,60 +13,45 @@ import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 
-import TaskClientAutomation from "@/app/images/versions/2_7_0/client-task-automation.png";
-import AutomationPage from "@/app/images/versions/2_7_0/automation-page.png";
-import ChangeStatusBatch from "@/app/images/versions/2_7_0/change-in-batch-status.png";
-import WorkflowDashboard from "@/app/images/versions/2_7_0/workflow-dashboard.png";
+import TranscriptionWithAI from "@/app/images/versions/2_5_0/transcription-with-ai.png";
+import ReportCNPJByRecive from "@/app/images/versions/2_5_0/reports-cnpj-by-recive.png";
+import GetOficialInfoByCnpj from "@/app/images/versions/2_5_0/get-oficial-info-by-cnpj.png";
 
 const updates = [
   {
-    title: "Criação de Tarefa ao cadastrar cliente",
+    title: "Cadastro de Problemas via Áudio com IA",
     description:
-      "Cria uma tarefa de boas-vindas ou onboarding quando um novo cliente é cadastrado.",
+      "Agora é possível cadastrar problemas utilizando mensagens de áudio. A inteligência artificial transcreve o áudio para texto, facilitando o registro e a organização das informações.",
     steps: [
-      "Na página de automações, selecione a opção Tarefa ao cadastrar cliente",
-      "Crie uma automação, nela você poderá realizar o gatilho que vai criar a tarefa, e ação que vai executar",
+      "Na página de informações do cliente, clique em adicionar, ou editar um problema existente.",
+      "Selecione a opção Gravar Audio.",
     ],
-    image: TaskClientAutomation,
+    image: TranscriptionWithAI,
     status: "Adicionado",
-    link: "#",
+    link: "https://gclient.tawk.help/article/como-cadastrar-problemas",
   },
   {
-    title: "Pagina centralizadora das Automações",
+    title: "Gerar relatório com os dados CNPJ em lote",
     description:
-      "Uma página centralizada para gerenciar todas as automações do sistema, com um visual clean e organizado.",
+      "É possível gerar relatórios com os dados do CNPJ de vários clientes ao mesmo tempo, otimizando o processo de obtenção dessas informações.",
     steps: [
+      "No menu lateral, você encontrará a opção Relatórios > Receita Federal.",
+      "Cliquem em Criar novo relatório, selecione os clientes desejados e clique em Gerar relatório.",
+      "Será iniciar a geração do relatório, que pode levar alguns minutos dependendo da quantidade de clientes selecionados.",
     ],
-    image: AutomationPage,
+    image: ReportCNPJByRecive,
     status: "Adicionado",
-    link: "#",
-  },
-  {
-    title:
-      "Alterar status do cliente em lote",
-    description:
-      "Agora é possível alterar o status de vários clientes de uma só vez, otimizando o processo de gerenciamento e organização dos dados.",
-    steps: [
-      "Na página das Ações em Lote, selecione a opção Alterar status",
-      "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
-    ],
-    image: ChangeStatusBatch,
-    status: "Adicionado",
-    link: "#",
+    link: "https://gclient.tawk.help/article/gerar-relatorio-com-os-dados-cnpj-em-lote",
   },
   {
     title:
-      "Painel de Quadros: visão completa e inteligente dos seus fluxos",
+      "Preencher automaticamente dados do cliente a partir do CNPJ no cadastro",
     description:
-      "Um dashboard completo e intuitivo para acompanhar todos os seus fluxos de trabalho. Filtre por diretoria, departamento ou responsável, visualize métricas importantes em cartões informativos, acompanhe tarefas atrasadas e analise dados através de gráficos detalhados.",
+      "Ao cadastrar um novo cliente, agora é possível preencher automaticamente os dados básicos utilizando o CNPJ, agilizando o processo de cadastro.",
     steps: [
-      "Na Navbar, navegue até Fluxos de Trabalho e clique em Dashboard",
-      "Use os seletores no topo para filtrar por Diretoria, Departamento ou Responsável",
-      "Visualize os cartões de métricas para ter uma visão rápida dos principais indicadores",
-      "Acompanhe a tabela de tarefas atrasadas para identificar pendências que precisam de atenção",
-      "Explore os gráficos interativos para analisar a distribuição de tarefas por estado, departamento ou responsável"
+      "Na pagina de cadastro de clientes, quando inserido o valor do CNPJ, você pode selecionar em consultar para pode preencher os dados automaticamente.",
     ],
-    image: WorkflowDashboard,
+    image: GetOficialInfoByCnpj,
     status: "Adicionado",
     link: "#",
   },
@@ -88,7 +73,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              22 de janeiro de 2026 <span>v2.7.0</span>
+              16 de outubro de 2025 <span>v2.5.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -144,8 +129,11 @@ export default function Home() {
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Automação de tarefas, agora é possível selecionar responsável para a tarefa e vencimento</li>
-                <li>Filtro dos relatórios de problemas e ocorrências</li>
+                <li>Link aprimorado da tarefa com a anotação</li>
+                <li>
+                  Não recarregar a página do cliente após cadastrar ou editar
+                  problemas e ocorrências
+                </li>
               </ul>
             </div>
           </div>
