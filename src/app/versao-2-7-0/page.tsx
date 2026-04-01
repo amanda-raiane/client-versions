@@ -10,44 +10,61 @@ import { SessionOtherResources } from "@/app/components/SessionOtherResources";
 import PageHeader from "@/app/components/PageHeader";
 import { ThemeChanger } from "@/app/components/ThemeChanger.tsx";
 
-import LicenseImprovements from "@/app/images/versions/2_8_0/license-improvements.png";
-import ImportTasks from "@/app/images/versions/2_8_0/import-tasks.png";
-import StatusPermissions from "@/app/images/versions/2_8_0/permissions-status.png";
-
 import logoDark from "@/app/assets/logo-branco.png";
 import logoLight from "@/app/assets/logo-azul.png";
 
+import TaskClientAutomation from "@/app/images/versions/2_7_0/client-task-automation.png";
+import AutomationPage from "@/app/images/versions/2_7_0/automation-page.png";
+import ChangeStatusBatch from "@/app/images/versions/2_7_0/change-in-batch-status.png";
+import WorkflowDashboard from "@/app/images/versions/2_7_0/workflow-dashboard.png";
+
 const updates = [
   {
-    title: "Melhorias nas licenças",
+    title: "Criação de Tarefa ao cadastrar cliente",
     description:
-      "Aprimoramentos para dar mais flexibilidade, organização e controle no gerenciamento de licenças.",
+      "Cria uma tarefa de boas-vindas ou onboarding quando um novo cliente é cadastrado.",
     steps: [
-      "Licenças indeterminadas",
-      "Exportar licenças",
-      "Vincular certificado ou licença a um sócio",
-      "Novos filtros",
+      "Na página de automações, selecione a opção Tarefa ao cadastrar cliente",
+      "Crie uma automação, nela você poderá realizar o gatilho que vai criar a tarefa, e ação que vai executar",
     ],
-    image: LicenseImprovements,
-    status: "Modificado",
-    link: "#",
-  },
-  {
-    title: "Importar processos em lote",
-    description:
-      "Agora é possível importar processos em lote para acelerar cadastros e rotinas.",
-    steps: ["Onboarding", "Societário", "Adoção"],
+    image: TaskClientAutomation,
     status: "Adicionado",
-    image: ImportTasks,
     link: "#",
   },
   {
-    title: "Novas permissões de usuário para status e etapas dos processos",
+    title: "Pagina centralizadora das Automações",
     description:
-      "Controle mais granular de acesso para editar e movimentar processos.",
+      "Uma página centralizada para gerenciar todas as automações do sistema, com um visual clean e organizado.",
     steps: [],
+    image: AutomationPage,
     status: "Adicionado",
-    image: StatusPermissions,
+    link: "#",
+  },
+  {
+    title: "Alterar status do cliente em lote",
+    description:
+      "Agora é possível alterar o status de vários clientes de uma só vez, otimizando o processo de gerenciamento e organização dos dados.",
+    steps: [
+      "Na página das Ações em Lote, selecione a opção Alterar status",
+      "Selecione os clientes desejados e selecione o status desejado, visualize a alteração e confirme",
+    ],
+    image: ChangeStatusBatch,
+    status: "Adicionado",
+    link: "#",
+  },
+  {
+    title: "Painel de Quadros: visão completa e inteligente dos seus fluxos",
+    description:
+      "Um dashboard completo e intuitivo para acompanhar todos os seus fluxos de trabalho. Filtre por diretoria, departamento ou responsável, visualize métricas importantes em cartões informativos, acompanhe tarefas atrasadas e analise dados através de gráficos detalhados.",
+    steps: [
+      "Na Navbar, navegue até Fluxos de Trabalho e clique em Dashboard",
+      "Use os seletores no topo para filtrar por Diretoria, Departamento ou Responsável",
+      "Visualize os cartões de métricas para ter uma visão rápida dos principais indicadores",
+      "Acompanhe a tabela de tarefas atrasadas para identificar pendências que precisam de atenção",
+      "Explore os gráficos interativos para analisar a distribuição de tarefas por estado, departamento ou responsável",
+    ],
+    image: WorkflowDashboard,
+    status: "Adicionado",
     link: "#",
   },
 ];
@@ -68,7 +85,7 @@ export default function Home() {
               src={theme === "dark" ? logoDark : logoLight}
             />
             <p className="mt-2 dark:text-slate-400 text-sm text-slate-800">
-              01 de abril de 2026 <span>v2.8.0</span>
+              22 de janeiro de 2026 <span>v2.7.0</span>
             </p>
           </div>
           <ThemeChanger />
@@ -120,38 +137,15 @@ export default function Home() {
           </h2>
           <div className="flex md:gap-20 gap-5 flex-col md:flex-row">
             <div className="md:max-w-[30%]">
-              <p className="bg-blue-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
-                Adicionado
-              </p>
-              <ul className="flex flex-col gap-2">
-                <li>Relatório de anotações</li>
-                <li>Controle de usuários inativos</li>
-                <li>Relatório de sócios</li>
-                <li>
-                  Adicionado novo departamento para atribuir responsável:
-                  societário
-                </li>
-              </ul>
-            </div>
-            <div className="md:max-w-[30%]">
               <p className="bg-yellow-600 px-2 rounded-2xl py-1 mb-2 text-xs uppercase tracking-widest font-semibold text-slate-50 w-min">
                 Modificado
               </p>
               <ul className="flex flex-col gap-2">
-                <li>Link para assinatura de contrato</li>
                 <li>
-                  Mudar nome da página "meus clientes" para "clientes
-                  atribuídos"
+                  Automação de tarefas, agora é possível selecionar responsável
+                  para a tarefa e vencimento
                 </li>
-                <li>
-                  Notificar usuário quando ele é atribuído como responsável do
-                  cliente em um departamento
-                </li>
-                <li>
-                  Correção nas automações de processos (criar tarefas
-                  automáticas)
-                </li>
-                <li>Definir cores das tags</li>
+                <li>Filtro dos relatórios de problemas e ocorrências</li>
               </ul>
             </div>
           </div>
