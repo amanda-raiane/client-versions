@@ -140,8 +140,8 @@ export default function Home() {
               <ul className="flex flex-col gap-2">
                 <li>Link para assinatura de contrato</li>
                 <li>
-                  Mudar nome da página "meus clientes" para "clientes
-                  atribuídos"
+                  Mudar nome da página &quot;meus clientes&quot; para
+                  &quot;clientes atribuídos&quot;
                 </li>
                 <li>
                   Notificar usuário quando ele é atribuído como responsável do
